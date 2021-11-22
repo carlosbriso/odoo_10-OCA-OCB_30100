@@ -1,0 +1,389 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ener_asset_trace
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-29 14:51+0000\n"
+"PO-Revision-Date: 2018-11-29 15:52+0100\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: ener_asset_trace
+#: selection:account.asset.asset,line_type:0
+msgid "Aerial"
+msgstr "Aérea"
+
+#. module: ener_asset_trace
+#: model:ir.model,name:ener_asset_trace.model_account_asset_asset
+msgid "Asset/Revenue Recognition"
+msgstr "Reconocimiento del bien/ingreso"
+
+#. module: ener_asset_trace
+#: selection:account.asset.asset.trace,ownership:0
+msgid "Assigned"
+msgstr "Cedida"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_assignment_date
+msgid "Assignment Date"
+msgstr "Fecha de cesión"
+
+#. module: ener_asset_trace
+#: selection:account.asset.asset,line_type:0
+msgid "Building"
+msgstr "Edificio"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_ct_id_4605
+msgid "CT Name"
+msgstr "Nombre CT"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_ct_type
+msgid "CT Type"
+msgstr "Tipo CT"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_city
+msgid "City"
+msgstr "Municipio"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_code
+msgid "Code"
+msgstr "Código"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_create_uid
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_ct_create_uid
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_origin_line_create_uid
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_zone_create_uid
+#: model:ir.model.fields,field_description:ener_asset_trace.field_res_country_nucleus_create_uid
+#: model:ir.model.fields,field_description:ener_asset_trace.field_res_country_parish_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_create_date
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_ct_create_date
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_origin_line_create_date
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_zone_create_date
+#: model:ir.model.fields,field_description:ener_asset_trace.field_res_country_nucleus_create_date
+#: model:ir.model.fields,field_description:ener_asset_trace.field_res_country_parish_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: ener_asset_trace
+#: selection:account.asset.asset.trace,line_type:0
+msgid "Derivation"
+msgstr "Derivación"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_ct_display_name
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_display_name
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_origin_line_display_name
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_zone_display_name
+#: model:ir.model.fields,field_description:ener_asset_trace.field_res_country_nucleus_display_name
+#: model:ir.model.fields,field_description:ener_asset_trace.field_res_country_parish_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_exp_name
+msgid "Exp. Name"
+msgstr "Nombre Exp."
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_financing_perc
+msgid "Financing (%)"
+msgstr "Financiación (%)"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_ct_id
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_id
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_origin_line_id
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_zone_id
+#: model:ir.model.fields,field_description:ener_asset_trace.field_res_country_nucleus_id
+#: model:ir.model.fields,field_description:ener_asset_trace.field_res_country_parish_id
+msgid "ID"
+msgstr "ID"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_identificator
+msgid "Identificator"
+msgstr "Identificador"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_input_voltage
+msgid "Input Voltage (V)"
+msgstr "Voltaje nominal (V)"
+
+#. module: ener_asset_trace
+#: selection:account.asset.asset.trace.ct,ct_type:0
+msgid "Interior"
+msgstr "Interior"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_investment_plan
+msgid "Investment Plan ID"
+msgstr "ID plan Inversión"
+
+#. module: ener_asset_trace
+#: selection:account.asset.asset.trace,origin_type:0
+msgid "Junction"
+msgstr "Punto de entronque"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace___last_update
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_ct___last_update
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_origin_line___last_update
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_zone___last_update
+#: model:ir.model.fields,field_description:ener_asset_trace.field_res_country_nucleus___last_update
+#: model:ir.model.fields,field_description:ener_asset_trace.field_res_country_parish___last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_ct_write_uid
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_origin_line_write_uid
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_write_uid
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_zone_write_uid
+#: model:ir.model.fields,field_description:ener_asset_trace.field_res_country_nucleus_write_uid
+#: model:ir.model.fields,field_description:ener_asset_trace.field_res_country_parish_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_ct_write_date
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_origin_line_write_date
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_write_date
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_zone_write_date
+#: model:ir.model.fields,field_description:ener_asset_trace.field_res_country_nucleus_write_date
+#: model:ir.model.fields,field_description:ener_asset_trace.field_res_country_parish_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_length
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_length
+msgid "Length (m)"
+msgstr "Longitud (m)"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_line_type
+msgid "Line type"
+msgstr "Tipo de línea"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_low_voltage
+msgid "Low Voltage"
+msgstr "Tensión baja"
+
+#. module: ener_asset_trace
+#: selection:account.asset.asset.trace,line_type:0
+msgid "Main Line"
+msgstr "Línea principal"
+
+#. module: ener_asset_trace
+#: selection:account.asset.asset.trace,trace_class:0
+msgid "Manoeuvre"
+msgstr "Maniobra"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_ct_name
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_name
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_origin_line_name
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_zone_name
+#: model:ir.model.fields,field_description:ener_asset_trace.field_res_country_nucleus_name
+#: model:ir.model.fields,field_description:ener_asset_trace.field_res_country_parish_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: ener_asset_trace
+#: selection:account.asset.asset.trace,particular:0
+msgid "No"
+msgstr "No"
+
+#. module: ener_asset_trace
+#: selection:account.asset.asset.trace.ct,ct_type:0
+msgid "On Portico"
+msgstr "En pórtico"
+
+#. module: ener_asset_trace
+#: selection:account.asset.asset.trace.ct,ct_type:0
+msgid "On Support"
+msgstr "Sobre apoyo"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_origin_line
+msgid "Origin Line"
+msgstr "Línea de origen"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_output_sockets_number
+msgid "Output Sockets Number"
+msgstr "Nº de salidas"
+
+#. module: ener_asset_trace
+#: selection:account.asset.asset.trace,ownership:0
+msgid "Own"
+msgstr "Propia"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_ct_ct_type
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_line_type
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_origin_type
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_ownership
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_trace_class
+msgid "Ownership"
+msgstr "Propiedad"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_parish_id
+msgid "Parish"
+msgstr "Parroquia"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_particular
+msgid "Particular"
+msgstr "Particular"
+
+#. module: ener_asset_trace
+#: selection:account.asset.asset.trace.ct,ct_type:0
+msgid "Stand"
+msgstr "Caseta"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_state_id
+#: model:ir.model.fields,field_description:ener_asset_trace.field_res_country_nucleus_state_id
+#: model:ir.model.fields,field_description:ener_asset_trace.field_res_country_parish_state_id
+msgid "State"
+msgstr "Provincia"
+
+#. module: ener_asset_trace
+#: selection:account.asset.asset.trace,line_type:0
+msgid "Subderivation"
+msgstr "Subderivación"
+
+#. module: ener_asset_trace
+#: selection:account.asset.asset.trace,origin_type:0
+msgid "Substation"
+msgstr "Subestación"
+
+#. module: ener_asset_trace
+#: selection:account.asset.asset.trace,origin_type:0
+msgid "Support"
+msgstr "Apoyo"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_id_4626
+msgid "Trace"
+msgstr "Traza"
+
+#. module: ener_asset_trace
+#: model:ir.ui.view,arch_db:ener_asset_trace.view_account_asset_asset_form
+msgid "Trace Information"
+msgstr "Información de Traza"
+
+#. module: ener_asset_trace
+#: model:ir.actions.act_window,name:ener_asset_trace.action_account_asset_asset_trace
+#: model:ir.ui.menu,name:ener_asset_trace.menu_action_account_asset_asset_trace
+#: model:ir.ui.view,arch_db:ener_asset_trace.view_account_asset_asset_trace_form
+#: model:ir.ui.view,arch_db:ener_asset_trace.view_account_asset_asset_trace_tree
+msgid "Traces"
+msgstr "Trazas"
+
+#. module: ener_asset_trace
+#: selection:account.asset.asset.trace,trace_class:0
+msgid "Transformation"
+msgstr "Transformación"
+
+#. module: ener_asset_trace
+#: selection:account.asset.asset.trace,origin_type:0
+msgid "Transformation Centre"
+msgstr "Centro de transformación"
+
+#. module: ener_asset_trace
+#: selection:account.asset.asset.trace,trace_class:0
+msgid "Transformation Manoeuvre"
+msgstr "Maniobra de transformación"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_transformation_pot
+msgid "Transformation Pot. (KVA)"
+msgstr "Pot. transformación (KVA)"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_transformers_number
+msgid "Transformers Number"
+msgstr "Nº de transformadores"
+
+#. module: ener_asset_trace
+#: selection:account.asset.asset,line_type:0
+msgid "Underground"
+msgstr "Subterránea"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_urban_nucleus_id
+msgid "Urban Nucleus"
+msgstr "Núcleo urbano"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_voltage
+msgid "Voltage"
+msgstr "Tensión"
+
+#. module: ener_asset_trace
+#: selection:account.asset.asset.trace,particular:0
+msgid "Yes"
+msgstr "Sí"
+
+#. module: ener_asset_trace
+#: model:ir.model.fields,field_description:ener_asset_trace.field_account_asset_asset_trace_zone_id_4616
+msgid "Zone"
+msgstr "Zona"
+
+#. module: ener_asset_trace
+#: model:ir.model,name:ener_asset_trace.model_account_asset_asset_trace
+msgid "account.asset.asset.trace"
+msgstr ""
+
+#. module: ener_asset_trace
+#: model:ir.model,name:ener_asset_trace.model_account_asset_asset_trace_ct
+msgid "account.asset.asset.trace.ct"
+msgstr ""
+
+#. module: ener_asset_trace
+#: model:ir.model,name:ener_asset_trace.model_account_asset_asset_trace_origin_line
+msgid "account.asset.asset.trace.origin.line"
+msgstr ""
+
+#. module: ener_asset_trace
+#: model:ir.model,name:ener_asset_trace.model_account_asset_asset_trace_zone
+msgid "account.asset.asset.trace.zone"
+msgstr ""
+
+#. module: ener_asset_trace
+#: model:ir.model,name:ener_asset_trace.model_res_country_nucleus
+msgid "res.country.nucleus"
+msgstr ""
+
+#. module: ener_asset_trace
+#: model:ir.model,name:ener_asset_trace.model_res_country_parish
+msgid "res.country.parish"
+msgstr ""
+
+#~ msgid "Class"
+#~ msgstr "Clase"
+
+#~ msgid "Length"
+#~ msgstr "Longitud"

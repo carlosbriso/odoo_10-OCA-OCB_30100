@@ -1,0 +1,448 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* ener_import_policy
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-16 09:06+0000\n"
+"PO-Revision-Date: 2019-12-16 09:06+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>address</b>: DIRECCIONSUMINISTRO"
+msgstr "<b>address</b>: DIRECCIONSUMINISTRO"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>brand</b>: MARCA"
+msgstr "<b>brand</b>: MARCA"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>cups</b>: CUPS"
+msgstr "<b>cups</b>: CUPS"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>policy_date_end</b>: FECHACORTE"
+msgstr "<b>policy_date_end</b>: FECHACORTE"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>policy_date_start</b>: FECHAINICIO"
+msgstr "<b>policy_date_start</b>: FECHAINICIO"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>id5</b>: ID5"
+msgstr "<b>id5</b>: ID5"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>model</b>: MODELO"
+msgstr "<b>model</b>: MODELO"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>name</b>: POLIZA"
+msgstr "<b>name</b>: POLIZA"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>name_description</b>: NOMBRE DESCRIPTIVO DEL PUNTO"
+msgstr "<b>name_description</b>: NOMBRE DESCRIPTIVO DEL PUNTO"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>namect</b>: NOMBRECT"
+msgstr "<b>namect</b>: NOMBRECT"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>partner</b>: CLIENTE"
+msgstr "<b>partner</b>: CLIENTE"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>pcp1</b>: PCP1"
+msgstr "<b>pcp1</b>: PCP1"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>pcp2</b>: PCP2"
+msgstr "<b>pcp2</b>: PCP2"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>pcp3</b>: PCP3"
+msgstr "<b>pcp3</b>: PCP3"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>pcp4</b>: PCP4"
+msgstr "<b>pcp4</b>: PCP4"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>pcp5</b>: PCP5"
+msgstr "<b>pcp5</b>: PCP5"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>pcp6</b>: PCP6"
+msgstr "<b>pcp6</b>: PCP6"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>price</b>: TARIFA"
+msgstr "<b>price</b>: TARIFA"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>rules</b>: REGIMEN"
+msgstr "<b>rules</b>: REGIMEN"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>serial_number</b>: NUMEROSERIE"
+msgstr "<b>serial_number</b>: NUMEROSERIE"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>technology</b>: TECNOLOGIA"
+msgstr "<b>technology</b>: TECNOLOGIA"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>type_installation</b>: TIPO INSTALACION"
+msgstr "<b>type_installation</b>: TIPO INSTALACION"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>type_point_messure</b>: TIPO PUNTO MEDIDA"
+msgstr "<b>type_point_messure</b>: TIPO PUNTO MEDIDA"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>type_read</b>: MEDIO LECTURA"
+msgstr "<b>type_read</b>: MEDIO LECTURA"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>user</b>: RESPONSABLE"
+msgstr "<b>user</b>: RESPONSABLE"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "<b>voltage</b>: TRAMOTENSION"
+msgstr "<b>voltage</b>: TRAMOTENSION"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_address
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_address
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_address
+msgid "Address"
+msgstr "Dirección"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_brand
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_brand
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_brand
+msgid "Brand"
+msgstr "Marca"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_cups
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_cups
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_cups
+msgid "CUPS"
+msgstr "CUPS"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_import_policy
+msgid "Click in Import to create new policies.<br>\n"
+"                Importation file must fulfill the following format:"
+msgstr "Click en Importar para crear o modificar pólizas.<br>\n"
+"                El archivo de importación debe seguir el siguiente formato en la cabecera:"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_create_uid
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_create_date
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_policy_date_end
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_policy_date_end
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_policy_date_end
+msgid "Date end"
+msgstr "Fecha de corte"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_policy_date_start
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_policy_date_start
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_policy_date_start
+msgid "Date start"
+msgstr "Fecha de inicio"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_display_name
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_id
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_id
+msgid "ID"
+msgstr "ID"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_id5
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_id5
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_id5
+msgid "ID5"
+msgstr "ID5"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,name:ener_import_policy.action_import_policy
+msgid "Import Policy"
+msgstr "Importar Póliza"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy___last_update
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_write_uid
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_write_date
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_model
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_model
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_model
+msgid "Model"
+msgstr "Modelo"
+
+#. module: ener_import_policy
+#: code:addons/ener_import_policy/wizard/import_policy.py:155
+#, python-format
+msgid "More than one policy found with the reference {}. "
+msgstr "Se encontró mas de una póliza con la referencia {}. "
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_name_description
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_name_description
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_name_description
+msgid "Name description"
+msgstr "Nombre descriptivo del punto"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_namect
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_namect
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_namect
+msgid "NameCT"
+msgstr "NombreCT"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_pcp1
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_pcp1
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_pcp1
+msgid "PCP1"
+msgstr "PCP1"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_pcp2
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_pcp2
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_pcp2
+msgid "PCP2"
+msgstr "PCP2"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_pcp3
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_pcp3
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_pcp3
+msgid "PCP3"
+msgstr "PCP3"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_pcp4
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_pcp4
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_pcp4
+msgid "PCP4"
+msgstr "PCP4"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_pcp5
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_pcp5
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_pcp5
+msgid "PCP5"
+msgstr "PCP5"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_pcp6
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_pcp6
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_pcp6
+msgid "PCP6"
+msgstr "PCP6"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_partner
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_partner
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_partner
+msgid "Partner"
+msgstr "Cliente"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_user
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_user
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_user
+msgid "Person in charge"
+msgstr "Responsable"
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,name:ener_import_policy.action_policy_view
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_name
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_name
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_name_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_policy_id
+#: model:ir.ui.menu,name:ener_import_policy.policy_menu
+#: model:ir.ui.view,arch_db:ener_import_policy.policy_view_tree
+#: model:ir.ui.view,arch_db:ener_import_policy.view_project_policy_form
+msgid "Policy"
+msgstr "Póliza"
+
+#. module: ener_import_policy
+#: model:ir.ui.menu,name:ener_import_policy.import_policy_menu
+msgid "Policy Import"
+msgstr "Importar Póliza"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_price
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_price
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_price
+msgid "Price"
+msgstr "Tarifa"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_msg
+msgid "Result"
+msgstr "Result"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_rules
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_rules
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_rules
+msgid "Rules"
+msgstr "Reglas"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_serial_number
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_serial_number
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_serial_number
+msgid "Serial Number"
+msgstr "Número de serie"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_strong
+msgid "Strong"
+msgstr "Strong"
+
+#. module: ener_import_policy
+#: model:ir.model,name:ener_import_policy.model_project_task
+msgid "Task"
+msgstr "Expediente"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_task_ids
+msgid "Tasks"
+msgstr "Expedientes"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_technology
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_technology
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_technology
+msgid "Technology"
+msgstr "Tecnología"
+
+#. module: ener_import_policy
+#: code:addons/ener_import_policy/wizard/import_policy.py:151
+#, python-format
+msgid "The policy {} has been generated."
+msgstr "La póloiza {} ha sido creada."
+
+#. module: ener_import_policy
+#: code:addons/ener_import_policy/wizard/import_policy.py:148
+#, python-format
+msgid "The policy {} has been modified."
+msgstr "La póliza {} ha sido modificada."
+
+#. module: ener_import_policy
+#: model:ir.actions.act_window,help:ener_import_policy.action_policy_view
+msgid "Tree view of policy.<br>\n"
+"                Click in Import to add new policy."
+msgstr "Vista lista de póliza.<br>\n"
+"                Click en Importar para añadir o modifcar pólizas."
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_type_installation
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_type_installation
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_type_installation
+msgid "Type installation"
+msgstr "Tipo instalación"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_type_point_messure
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_type_point_messure
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_type_point_messure
+msgid "Type point messure"
+msgstr "Tipo punto medida"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_type_read
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_type_read
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_type_read
+msgid "Type read"
+msgstr "Medio lectura"
+
+#. module: ener_import_policy
+#: model:ir.model.fields,field_description:ener_import_policy.field_import_policy_voltage
+#: model:ir.model.fields,field_description:ener_import_policy.field_policy_policy_voltage
+#: model:ir.model.fields,field_description:ener_import_policy.field_project_task_voltage
+msgid "Voltage"
+msgstr "Tensión"
+
+#. module: ener_import_policy
+#: model:ir.model,name:ener_import_policy.model_import_policy
+msgid "import.policy"
+msgstr "import.policy"
+
+#. module: ener_import_policy
+#: model:ir.model,name:ener_import_policy.model_policy_policy
+msgid "policy.policy"
+msgstr "policy.policy"
+

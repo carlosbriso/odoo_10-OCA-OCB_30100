@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_account_asset_asset_trace_tree" model="ir.ui.view">
+            <field name="name">account.asset.asset.trace.tree</field>
+            <field name="model">account.asset.asset.trace</field>
+            <field name="arch" type="xml">
+                <tree string="Traces">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="ownership"/>
+                    <field name="city"/>
+                    <field name="state_id"/>
+                    <field name="voltage"/>
+                    <field name="low_voltage"/>
+                    <field name="input_voltage"/>
+                    <field name="length"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_account_asset_asset_trace_form" model="ir.ui.view">
+            <field name="name">account.asset.asset.trace.form</field>
+            <field name="model">account.asset.asset.trace</field>
+            <field name="arch" type="xml">
+                <form string="Traces">
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1>
+                                <field name="name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="code"/>
+                                <field name="identificator"/>
+                                <field name="investment_plan"/>
+                                <field name="ownership"/>
+                                <field name="financing_perc"/>
+                                <field name="assignment_date"/>
+                                <field name="city"/>
+                                <field name="parish_id"/>
+                                <field name="urban_nucleus_id"/>
+                                <field name="state_id"/>
+                                <field name="zone_id"/>
+                            </group>
+                            <group>
+                                <field name="ct_id"/>
+                                <field name="ct_type"/>
+                                <field name="particular"/>
+                                <field name="low_voltage"/>
+                                <field name="input_voltage"/>
+                                <field name="voltage"/>
+                                <field name="exp_name"/>
+                                <field name="transformers_number"/>
+                                <field name="transformation_pot"/>
+                                <field name="line_type"/>
+                                <field name="origin_line"/>
+                                <field name="origin_type"/>
+                                <field name="output_sockets_number"/>
+                                <field name="trace_class"/>
+                                <field name="length"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_account_asset_asset_trace">
+            <field name="name">Traces</field>
+            <field name="res_model">account.asset.asset.trace</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem parent="account.menu_finance_entries" id="menu_action_account_asset_asset_trace" action="action_account_asset_asset_trace" sequence="101" groups="account.group_account_user"/>
+
+    </data>
+</odoo>

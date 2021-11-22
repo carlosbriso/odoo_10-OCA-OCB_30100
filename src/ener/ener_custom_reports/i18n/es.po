@@ -1,0 +1,127 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* ener_custom_reports
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-09 08:20+0000\n"
+"PO-Revision-Date: 2019-04-09 08:20+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ener_custom_reports
+#: model:ir.ui.view,arch_db:ener_custom_reports.report_invoice_document_srvx
+msgid "Cancelled Invoice"
+msgstr "Factura cancelada"
+
+#. module: ener_custom_reports
+#: model:ir.ui.view,arch_db:ener_custom_reports.report_invoice_document_srvx
+msgid "Customer Code"
+msgstr "Cópdigo de cliente"
+
+#. module: ener_custom_reports
+#: model:ir.ui.view,arch_db:ener_custom_reports.report_invoice_document_srvx
+msgid "Description"
+msgstr "Concepto"
+
+#. module: ener_custom_reports
+#: model:ir.ui.view,arch_db:ener_custom_reports.report_invoice_document_srvx
+msgid "Draft Invoice"
+msgstr "Factura borrador"
+
+#. module: ener_custom_reports
+#: model:ir.ui.view,arch_db:ener_custom_reports.report_invoice_document_srvx
+msgid "Due Date"
+msgstr "Fecha vencimiento"
+
+#. module: ener_custom_reports
+#: model:ir.ui.view,arch_db:ener_custom_reports.report_invoice_document_srvx
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: ener_custom_reports
+#: model:ir.ui.view,arch_db:ener_custom_reports.report_invoice_document_srvx
+msgid "Invoice Date"
+msgstr "Fecha factura"
+
+#. module: ener_custom_reports
+#: model:ir.ui.view,arch_db:ener_custom_reports.report_invoice_document_srvx
+msgid "PRO-FORMA"
+msgstr "PROFORMA"
+
+#. module: ener_custom_reports
+#: model:ir.ui.view,arch_db:ener_custom_reports.report_invoice_document_srvx
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: ener_custom_reports
+#: model:ir.ui.view,arch_db:ener_custom_reports.report_invoice_document_srvx
+msgid "Refund"
+msgstr "Factura rectificativa"
+
+#. module: ener_custom_reports
+#: model:ir.ui.view,arch_db:ener_custom_reports.report_invoice_document_srvx
+msgid "Source"
+msgstr "Origen"
+
+#. module: ener_custom_reports
+#: model:ir.ui.view,arch_db:ener_custom_reports.external_layout_header_custom
+msgid "<span>Phone: </span>"
+msgstr "<span>Teléfono: </span>"
+
+#. module: ener_custom_reports
+#: model:ir.ui.view,arch_db:ener_custom_reports.external_layout_header_custom
+msgid "<span>Fax: </span>"
+msgstr "<span>Fax: </span>"
+
+#. module: ener_custom_reports
+#: model:ir.ui.view,arch_db:ener_custom_reports.external_layout_header_custom
+msgid "<span>TIN: </span>"
+msgstr "<span>NIF: </span>"
+
+#. module: ener_custom_reports
+#: model:ir.ui.view,arch_db:ener_custom_reports.external_layout_header_custom
+msgid "<span>Website: </span>"
+msgstr "<span>Página Web: </span>"
+
+#. module: ener_custom_reports
+#: model:ir.ui.view,arch_db:ener_custom_reports.report_invoice_document_srvx
+msgid "Vendor Bill"
+msgstr "Factura de proveedor"
+
+#. module: ener_custom_reports
+#: model:ir.ui.view,arch_db:ener_custom_reports.report_invoice_document_srvx
+msgid "Vendor Refund"
+msgstr "Devolución a proveedor"
+
+#. module: ener_custom_reports
+#: model:ir.ui.view,arch_db:ener_custom_reports.report_invoice_document_srvx
+msgid "Tax Excluded Price"
+msgstr "Importe Neto"
+
+#. module: ener_custom_reports
+#: model:ir.ui.view,arch_db:ener_custom_reports.report_invoice_document_srvx
+msgid "<strong>Subtotal</strong>"
+msgstr "<strong>Base Imponible</strong>"
+
+#. module: ener_custom_reports
+#: model:ir.ui.view,arch_db:ener_custom_reports.report_invoice_document_srvx
+msgid "<strong>Comment:</strong>"
+msgstr "<strong>Comentarios:</strong>"
+
+#. module: ener_custom_reports
+#: model:ir.ui.view,arch_db:ener_custom_reports.report_invoice_document_srvx
+msgid "<strong>Due Date:</strong>"
+msgstr "<strong>Fecha de vencimiento:</strong>"
+
+#. module: ener_custom_reports
+#: model:ir.ui.view,arch_db:ener_custom_reports.report_invoice_document_srvx
+msgid "<strong>Payment Term:</strong>"
+msgstr "<strong>Forma de pago:</strong>"
+

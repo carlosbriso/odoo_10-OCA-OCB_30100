@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="trial_balance_wizard" model="ir.ui.view" >
+            <field name="name">Trial Balance</field>
+            <field name="model">trial.balance.report.wizard</field>
+            <field name="inherit_id" ref="account_financial_report_qweb.trial_balance_wizard"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='account_filter']" position='before'>
+                    <group name="account_filter_range" col="4">
+                        <field name="acc_from"/>
+                        <field name="acc_to"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    
+    </data>
+</odoo>

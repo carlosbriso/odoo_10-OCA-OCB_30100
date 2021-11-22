@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- project.task -->
+    <record id="view_project_policy_form" model="ir.ui.view" >
+        <field name="name">view.project.policy.form</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[2]" position="after">
+                <page name="policy_page" string="Policy">
+                    <group>
+                        <group>
+                            <field name="policy_id"/>
+                            <field name="partner"/>
+                            <field name="address"/>
+                            <field name="user"/>
+                            <field name="price"/>
+                            <field name="policy_date_start"/>
+                            <field name="policy_date_end"/>
+                            <field name="cups"/>
+                            <field name="technology"/>
+                            <field name="type_point_messure"/>
+                            <field name="type_installation"/>
+                            <field name="type_read"/>
+                            <field name="brand"/>
+                        </group>
+                        <group>
+                            <field name="model"/>
+                            <field name="serial_number"/>
+                            <field name="rules"/>
+                            <field name="name_description"/>
+                            <field name="voltage"/>
+                            <field name="namect"/>
+                            <field name="id5"/>
+                            <field name="pcp1"/>
+                            <field name="pcp2"/>
+                            <field name="pcp3"/>
+                            <field name="pcp4"/>
+                            <field name="pcp5"/>
+                            <field name="pcp6"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

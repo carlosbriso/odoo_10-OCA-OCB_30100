@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+
+        <!-- account.invoice -->
+
+        <record id="invoice_form" model="ir.ui.view" >
+            <field name="name">account.invoice.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+                <xpath expr='//field[@name="invoice_line_ids"]//tree//field[@name="account_analytic_id"]' position='attributes'>
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr='//field[@name="invoice_line_ids"]//tree//field[@name="account_analytic_id"]' position='after'>
+                    <button string="Analytics" class="oe_stat_button" name="act_invoice_line_2_analytic" type="object"/>
+                    <field name="account_analytic_ids" widget="many2many_tags" groups="analytic.group_analytic_accounting" domain="[('company_id', '=', parent.company_id)]" context="{'default_partner_id': parent.partner_id}" readonly="1"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="invoice_supplier_form" model="ir.ui.view" >
+            <field name="name">account.invoice.supplier.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form"/>
+            <field name="arch" type="xml">
+                <xpath expr='//field[@name="invoice_line_ids"]//tree//field[@name="account_analytic_id"]' position='attributes'>
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr='//field[@name="invoice_line_ids"]//tree//field[@name="account_analytic_id"]' position='after'>
+                    <button string="Analytics" class="oe_stat_button" name="act_invoice_line_2_analytic" type="object"/>
+                    <field name="account_analytic_ids" widget="many2many_tags" groups="analytic.group_analytic_accounting" domain="[('company_id', '=', parent.company_id)]" context="{'default_partner_id': parent.partner_id}" readonly="1"/>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- account.invoice.line.analytic -->
+
+        <record id="invoice_line_analytic_tree" model="ir.ui.view">
+            <field name="name">account.invoice.line.analytic.tree</field>
+            <field name="model">account.invoice.line.analytic</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Analytics" editable="bottom">
+                    <field name='account_analytic_id'/>
+                    <field name='analytic_percent'/>
+                    <field name='analytic_result' readonly="1"/>
+                    <field name='account_invoice_line_id' invisible="1"/>
+                    <button name="unlink" type="object" icon="fa-trash-o"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- account.move.line -->
+
+        <record id="view_move_line_form" model="ir.ui.view" >
+            <field name="name">account.move.line.form</field>
+            <field name="model">account.move.line</field>
+            <field name="inherit_id" ref="account.view_move_line_form"/>
+            <field name="arch" type="xml">
+                <xpath expr='//field[@name="analytic_account_id"]' position='after'>
+                    <field name="analytic_account_ids" widget="many2many_tags"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+
+</odoo>

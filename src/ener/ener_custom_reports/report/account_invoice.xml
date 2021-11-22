@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_saleorder_document_style" inherit_id="report.assets_pdf">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/ener_custom_reports/static/src/css/ener_custom_reports.css"/>
+            </xpath>
+        </template>
+
+        <template id="report_saleorder_document_style" inherit_id="report.assets_common">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/ener_custom_reports/static/src/css/ener_custom_reports.css"/>
+            </xpath>
+        </template>
+
+        <template id="report_invoice_document_srvx" inherit_id="account.report_invoice_document">
+
+            <!-- MODIFICATIONS -->
+
+            <xpath expr="//div[@class='page']/table[1]" position="attributes" >
+                <attribute name="class" >table table-bordered invoice_data</attribute>
+            </xpath>
+
+            <xpath expr="//div[@class='row'][2]//table[1]" position="attributes" >
+                <attribute name="class" >table table-bordered invoice_data</attribute>
+            </xpath>
+
+            <xpath expr="//div[@class='row'][2]/div[@class='col-xs-4 pull-right']" position="before">
+               <div class="col-xs-6 div-bordered">
+                    <p t-if="o.comment">
+                        <strong>Comment:</strong>
+                        <span t-field="o.comment"/>
+                    </p>
+                    <p t-if="o.date_due"> 
+                        <strong>Due Date:</strong>
+                        <span t-field="o.date_due"/>
+                    </p>
+                    <p t-if="o.payment_term_id"> 
+                        <strong>Payment Term:</strong>
+                        <span t-field="o.payment_term_id.note"/>
+                    </p>
+                    <p t-if="o.fiscal_position_id.note">
+                        <strong>Fiscal Position Remark:</strong>
+                        <span t-field="o.fiscal_position_id.note"/>
+                    </p>
+               </div>
+            </xpath>
+
+            <xpath expr="//div[@class='row'][3]//table[1]" position="attributes" >
+                <attribute name="class" >table table-bordered invoice_data</attribute>
+            </xpath>
+
+            <xpath expr="//div[@class='row'][3]/div[@class='col-xs-6']" position="attributes">
+                <attribute name="class">col-xs-6 hidden</attribute>
+            </xpath>
+
+            <xpath expr="//div[@class='page']/p[@t-if='o.comment']" position="attributes">
+                <attribute name="class">hidden</attribute>
+            </xpath>
+
+            <xpath expr="//div[@class='page']/p[@t-if='o.payment_term_id']" position="attributes">
+                <attribute name="class">hidden</attribute>
+            </xpath>
+
+            <xpath expr="//div[@class='page']/p[@t-if='o.fiscal_position_id.note']" position="attributes">
+                <attribute name="class">hidden</attribute>
+            </xpath>
+
+
+            <!-- REPLACEMENTS: This can give problems if any module try to modify this elements -->
+
+            <xpath expr="//div[@class='page']/h2[1]" position="replace" />
+
+            <xpath expr="//div[@class='page']/div[@class='row'][1]" position="replace" >
+                <div class="invoice_post_header">
+                    <h2 class="col-xs-5">
+                        <span t-if="o.type == 'out_invoice' and (o.state == 'open' or o.state == 'paid')">Invoice</span>
+                        <span t-if="o.type == 'out_invoice' and o.state == 'proforma2'">PRO-FORMA</span>
+                        <span t-if="o.type == 'out_invoice' and o.state == 'draft'">Draft Invoice</span>
+                        <span t-if="o.type == 'out_invoice' and o.state == 'cancel'">Cancelled Invoice</span>
+                        <span t-if="o.type == 'out_refund'">Refund</span>
+                        <span t-if="o.type == 'in_refund'">Vendor Refund</span>
+                        <span t-if="o.type == 'in_invoice'">Vendor Bill</span>
+                        <span t-field="o.number"/>
+                    </h2>
+                    <div name="invoice_address" class="col-xs-6">
+                        <address t-field="o.partner_id"
+                            t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": True}' />
+                        <span t-if="o.partner_id.vat">TIN: <span t-field="o.partner_id.vat"/></span>
+                    </div>
+                </div>
+                <div class="clearfix" />
+
+            </xpath>
+
+            <xpath expr="//div[@class='page']/table[1]" position="replace">
+                <table class="table table-bordered invoice_data">
+                    <thead>
+                        <tr>
+                            <th class="text-center">Quantity</th>
+                            <th class="text-center">Description</th>
+                            <th class="hidden">Source Document</th>
+                            <th class="text-center">Unit Price</th>
+                            <th t-if="display_discount" class="text-right">Disc.(%)</th>
+                            <th class="text-center">Tax Excluded Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="invoice_tbody">
+                        <tr t-foreach="o.invoice_line_ids" t-as="l">
+                            <td class="hidden"><span t-field="l.origin"/></td>
+                            <td class="text-right">
+                                <span t-field="l.quantity"/>
+                                <span t-field="l.uom_id" groups="product.group_uom"/>
+                            </td>
+                            <td><span t-field="l.name"/></td>
+                            <td class="text-right">
+                                <span t-field="l.price_unit"/>
+                            </td>
+                            <td t-if="display_discount" class="text-right">
+                                <span t-field="l.discount"/>
+                            </td>
+                            <td class="text-right">
+                                <span t-field="l.price_subtotal" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </xpath>
+
+            <xpath expr="//div[@class='page']/div[@class='row mt32 mb32']" position="replace" >
+                <table class="table table-bordered invoice_data" >
+                    <thead>
+                        <tr>
+                            <th class="text-center">Invoice Date</th>
+                            <th class="text-center">N/Ref</th>
+                            <th class="text-center">S/Ref</th>
+                        </tr>
+                    </thead>
+                    <tbody class="invoice_tbody">
+                        <tr>
+                            <td class="text-center"><span t-field="o.date_invoice"/></td>
+                            <td class="text-center"><span t-field="o.nref"/></td>
+                            <td class="text-center"><span t-field="o.sref"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </xpath>
+
+            <xpath expr="//t[@t-as='amount_by_group']" position="replace">
+                <t t-foreach="o._get_tax_amount_by_group()" t-as="amount_by_group">
+                    <tr>
+                        <td>
+                            <strong><span t-esc="amount_by_group[0] if len(o.tax_line_ids) &gt; 1 else (o.tax_line_ids.tax_id.tax_group_id.name)"/></strong>
+                        </td>
+                        <td class="text-right">
+                            <span t-esc="amount_by_group[2]"/>
+                        </td>
+                    </tr>
+                </t>
+            </xpath>
+        </template>
+    </data>
+</odoo>

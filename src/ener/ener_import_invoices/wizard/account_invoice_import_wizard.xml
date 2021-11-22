@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <record id="view_account_invoice_import_form" model="ir.ui.view">
+            <field name="name">Import invoices from file</field>
+            <field name="model">account.invoice.import.wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <div attrs="{'invisible': [('msg', '=', False)]}">
+                        <h2>Imported invoices</h2>
+                        <div class="alert alert-success">Created invoices: <field name="msg" /></div>
+                    </div>
+
+                    <h2>Invoices Importation</h2>
+                    <p style="width: 100%;">Select the file to import (ZIP, CSV). The content of the ZIP file must be the CSV files. Invoices will be created in draft state.</p>
+                    <p class="alert alert-info"><strong>NOTE! </strong> Refresh the page to see the changes.</p>
+                    <field name="name" invisible="1"/>
+                    <field name="file" filename="name" nolabel="1"/>
+                    <footer>
+                        <span name="go-wizard" attrs="{'invisible': [('file', '=', False)]}">
+                            <button name="import_invoices"
+                                    type="object"
+                                    string="Import invoices"
+                                    class="oe_highlight" />
+                            or
+                        </span>
+                        <button special="cancel" string="Close" type="object"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_import_invoices" model="ir.actions.act_window">
+            <field name="name">Import Invoices</field>
+            <field name="res_model">account.invoice.import.wizard</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_account_invoice_import_form" />
+            <field name="target">new</field>
+        </record>
+
+        <record id="menu_import_invoices" model="ir.ui.menu" >
+            <field name="name">Import Invoices</field>
+            <field name="sequence" eval="16" />
+            <field name="action" ref="action_import_invoices" />
+            <field name="parent_id" ref="account.menu_finance_receivables" />
+        </record>
+    </data>
+</odoo>

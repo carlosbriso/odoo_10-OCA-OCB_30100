@@ -1,0 +1,155 @@
+#!/bin/sh
+
+### BEGIN INIT INFO
+# Provides:             openerp-server
+# Required-Start:       $remote_fs $syslog
+# Required-Stop:        $remote_fs $syslog
+# Should-Start:         $network
+# Should-Stop:          $network
+# Default-Start:        2 3 4 5
+# Default-Stop:         0 1 6
+# Short-Description:    Enterprise Resource Management software
+# Description:          Odoo is a complete ERP and CRM software.
+### END INIT INFO
+
+PATH=/bin:/sbin:/usr/bin
+# v10 standard use. Run with workers>0 for CRON
+# and with reverse proxy redirecting "/longpolling" to longpolling port:
+# Official repo:
+# DAEMON=/opt/odoo/odoo_10/src/odoo/odoo.py
+# OCA OCB repo:
+DAEMON=/opt/odoo/odoo_10/src/OCA/OCB/odoo.py
+
+# Deprecated daemons
+# Without Instant Messaging
+# DAEMON=/opt/odoo/odoo_10/odoo/openerp-server
+# For using Instant Messaging (im_chat): Will use longpolling port
+# DAEMON=/opt/odoo/odoo_10/odoo/openerp-gevent
+
+NAME=odoo-server_10
+DESC=odoo-server_v10
+
+# Specify the user name (Default: odoo).
+USER=anubia
+
+# Specify an alternate config file (Default: /etc/openerp-server.conf).
+CONFIGFILE=/opt/odoo/odoo_10/config/.odoo_10.conf
+
+# pidfile
+PIDFILE=/var/run/$NAME.pid
+
+# Additional options that are passed to the Daemon.
+DAEMON_OPTS_BASE="-c $CONFIGFILE"
+DAEMON_OPTS="${DAEMON_OPTS_BASE}"
+
+UPDATE_OPT="--update=all"
+if [ "${2}" = "update" ] && [ -n "${3}" ] ; then
+  UPDATE_OPT="--update=${3}"
+fi
+
+DB_OPT=""
+if [ "${4}" = "-d" ] && [ -n "${5}" ] ; then
+  DB_OPT="-d ${5}"
+fi 
+
+if [ ! -x $DAEMON ] ; then
+    echo "ERROR: Daemon not found or not executable: $DAEMON"
+    exit 0
+fi
+if [ ! -f $CONFIGFILE ] ; then
+    echo "ERROR: Config file not found: $CONFIGFILE"
+    exit 0
+fi
+
+checkpid() {
+    [ -f $PIDFILE ] || return 1
+    pid=`cat $PIDFILE`
+    [ -d /proc/$pid ] && return 0
+    return 1
+}
+
+
+status() { 
+    if [ -f $PIDFILE ] ; then
+        checkpid `cat $PIDFILE`
+        RETVAL=$?
+        if [ $RETVAL -eq 0 ] ; then
+            pid=`cat $PIDFILE`
+            echo ""
+            echo "$NAME is running... PID: ${pid}"
+            echo ""
+            ps -f -p ${pid}
+            echo ""
+            netstat -anpt | grep -e "PID/\|$pid/"
+        else
+            echo "$NAME is stopped."
+        fi
+    else
+        echo "$NAME is stopped. Looks like it has never started before during this session."
+    fi
+    return $RETVAL
+}
+
+
+case "${1}" in
+        start)
+                echo -n "Starting ${DESC}: "
+                if [ "${2}" = "update" ] ; then
+                    DAEMON_OPTS="${DAEMON_OPTS_BASE} ${UPDATE_OPT} ${DB_OPT}"
+                    echo "Starting service with update option: ${DAEMON_OPTS}"
+                fi
+
+                start-stop-daemon --start --quiet --pidfile ${PIDFILE} \
+                        --chuid ${USER} --background --make-pidfile \
+                        --exec ${DAEMON} -- ${DAEMON_OPTS}
+
+                sleep 1
+
+                DAEMON_OPTS="${DAEMON_OPTS_BASE}"
+                echo "${NAME}.  PID: "`cat $PIDFILE`
+                ;;
+
+        stop)
+                echo -n "Stopping ${DESC}: "
+
+                start-stop-daemon --stop --quiet --pidfile ${PIDFILE} \
+                        --oknodo
+
+                echo "${NAME}."
+                ;;
+
+        restart|force-reload)
+                echo -n "Restarting ${DESC}: "
+
+                start-stop-daemon --stop --quiet --pidfile ${PIDFILE} \
+                        --oknodo
+      
+                sleep 1
+
+                echo -n "Re-starting ${DESC}: "
+                if [ "${2}" = "update" ] ; then
+                    DAEMON_OPTS="${DAEMON_OPTS_BASE} ${UPDATE_OPT}"
+                    echo "Starting service with update option: ${DAEMON_OPTS}"
+                fi
+                start-stop-daemon --start --quiet --pidfile ${PIDFILE} \
+                        --chuid ${USER} --background --make-pidfile \
+                        --exec ${DAEMON} -- ${DAEMON_OPTS}
+
+                sleep 1
+
+                DAEMON_OPTS="${DAEMON_OPTS_BASE}"
+                echo "${NAME}.  PID: "`cat $PIDFILE`
+                ;;
+
+        status)
+                status
+                ;;
+
+        *)
+                N=/etc/init.d/${NAME}
+                echo "Usage: ${NAME} {start [update]|stop|restart|force-reload|status}" >&2
+                exit 1
+                ;;
+esac
+
+exit 0

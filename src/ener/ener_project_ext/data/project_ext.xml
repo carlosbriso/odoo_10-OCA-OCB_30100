@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+
+        <template id="assets_backend" name="project_ext assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/ener_project_ext/static/src/css/project_ext.css"/>
+                <script type="text/javascript" src="/ener_project_ext/static/src/js/project_ext.js"></script>
+            </xpath>
+        </template>
+
+        <record id="assigned_task" model="mail.template">
+            <field name="name">Assigned project task</field>
+            <field name="model_id" ref="project.model_project_task"/>
+            <field name="email_from"><![CDATA["${object.company_id.name|safe}" <${(object.company_id.email or user.email)|safe}>]]></field>
+            <field name="email_to">${ctx['user_email']}|safe</field>
+            <field name="subject">Assigned task</field>
+            <field name="body_html"><![CDATA[
+<div style="padding: 0px; margin: auto; background: #FFFFFF repeat top /100%; color: #000">
+    <p>Dear ${ctx['user_name']},</p>
+    <p>The task <b>${ctx['task_name']}</b> has been assigned to you.</p>
+    <p></p>
+    <p>
+        <a href="/mail/view?model=project.task&res_id=${ctx['task_id']}" style="background-color: #9E588B; margin-top: 10px; padding: 10px; text-decoration: none; color: #fff; border-radius: 5px; font-size: 16px;">
+            View task
+        </a>
+    </p>
+    <p></p>
+    <p>Best regards.</p>
+</div>
+]]></field>
+            <field name="user_signature" eval="True"/>
+        </record>
+
+        <record model="ir.cron" id="sync_task_state_action">
+            <field name="name">Task state synchronization</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="model" eval="'project.task'"/>
+            <field name="function" eval="'cron_sync_task_state'"/>
+            <field name="args" eval="'()'"/>
+        </record>
+
+    </data>
+
+    <data noupdate="1">
+
+        <!-- ir.sequence -->
+
+        <record id="seq_project_task_code" model="ir.sequence">
+            <field name="name">Project Task Code</field>
+            <field name="code">project.task.code</field>
+            <field name="prefix"></field>
+            <field name="padding">6</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+            <field name="implementation">no_gap</field>
+        </record>
+
+    </data>
+
+</odoo>

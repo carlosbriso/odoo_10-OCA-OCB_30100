@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_model_form_inherit" model="ir.ui.view">
+            <field name="model">ir.model</field>
+            <field name="inherit_id" ref="base.view_model_form" />
+            <field name="arch" type="xml">
+                <xpath expr="/form/sheet/group[1]" position="before">
+                    <div class="oe_right oe_button_box" name="button_box">
+                        <button name="show_tree_view" type="object" string="Show Tree View"
+                                class="oe_stat_button" icon="fa-tree">
+                        </button>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

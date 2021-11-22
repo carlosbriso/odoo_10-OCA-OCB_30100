@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!--View import.xml.wizard-->
+    <record id="import_xml_wizard" model="ir.ui.view">
+        <field name="name">import.xml.form</field>
+        <field name="model">import.xml</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <span>This wizard allows you to import invoices from a XML file.</span>
+                </group>
+                <group>
+                    <field name="filename" invisible="1"/>
+                    <field name="source_file" filename="filename"/>
+                    <field name="state" invisible="1"/>
+                </group>
+                <group string="Invoices Importation" states="imported" colspan="8" col="1">
+                    <group name="xml_box" attrs="{'invisible': [('xml_msg', '=', False)]}">
+                        <div class="alert alert-success">
+                            <div><strong>GENERATED RECORDS</strong><br/></div><field style="text-align: justify;" name="xml_msg" nolabel="1" class="oe_inline"/>
+                        </div>
+                    </group>
+                    <group name="error_msg_box" attrs="{'invisible': [('error_msg', '=', False)]}">
+                        <div class="alert alert-danger">
+                            <div><strong>XML FILE IGNORED</strong><br/></div><field style="text-align: justify;" name="error_msg" nolabel="1" class="oe_inline"/>
+                        </div>
+                    </group>
+                </group>
+                <footer> 
+                    <button name="import_zip" string="Import" type="object" class="oe_highlight" /> 
+                    <button string="Cancel" special="cancel" class="oe_highlight"/>                
+                </footer>
+            </form>
+        </field>
+    </record>
+
+<!--Action for call the wizard-->
+    <record id="action_import_xml" model="ir.actions.act_window">
+        <field name="name">Import XML</field>
+        <field name="res_model">import.xml</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Attach a XML file to be attached to the generated record in Odoo.<br/>
+                Click in Import to create new invoices.
+            </p>
+        </field>
+    </record>
+
+<!--Create Menu item-->
+<menuitem id="import_xml_menu_rereceivables" 
+          name="Import XML"
+          parent="account.menu_finance_receivables"
+          action="action_import_xml"/>
+
+<menuitem id="import_xml_menu_payables" 
+          name="Import XML"
+          parent="account.menu_finance_payables"
+          action="action_import_xml"/>
+</odoo>

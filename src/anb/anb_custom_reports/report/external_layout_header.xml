@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="custom_external_layout_header" inherit_id="report.external_layout_header">
+            <xpath expr="//img[@t-if='company.logo']" position="attributes">
+                <attribute name="style">height: 50px; padding-bottom: 7px;</attribute>
+            </xpath>
+            <xpath expr="//div[@class='header']/div[3]" position="replace">
+                <div class="row">
+                    <div class="col-xs-7">
+                        <div t-field="company.partner_id.name" />
+                        <div>
+                            <span t-if="company.partner_id.street" t-field="company.partner_id.street" /><t t-if="company.partner_id.street2">, <span t-field="company.partner_id.street2" /></t>
+                        </div>
+                        <div>
+                            <span t-if="company.partner_id.zip" t-field="company.partner_id.zip" /><t t-if="company.partner_id.city" >, <span t-field="company.partner_id.city" /></t><t t-if="company.partner_id.state_id.name" >, <span t-field="company.partner_id.state_id.name" /></t><t t-if="company.partner_id.country_id.name" >, <span t-field="company.partner_id.country_id.name" />
+                            </t>
+                        </div>
+                        <div style="border-bottom: none;">
+                            TIN: <span t-if="company.partner_id.vat" t-field="company.partner_id.vat" />
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix row">
+                    <div class="col-xs-3">
+                        <div style="border-bottom: 1px solid #000 !important; width: 125px; display: block;"></div>
+                    </div>
+                </div>
+            </xpath>
+        </template> 
+
+        <template id="report_vat_view_style" inherit_id="report.layout">
+            <xpath expr="//head" position="inside">
+                <style type="text/css">
+                    .page {
+                        padding-top: 30px;
+                    }
+                </style>
+            </xpath>
+        </template>        
+    </data>
+</odoo>

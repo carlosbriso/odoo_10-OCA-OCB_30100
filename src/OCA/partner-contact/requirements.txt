@@ -1,0 +1,5 @@
+python-stdnum
+suds
+requests
+unicodecsv
+validate_email

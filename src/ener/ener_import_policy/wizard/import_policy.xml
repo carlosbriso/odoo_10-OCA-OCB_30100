@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--View import.policy.tree-->
+    <record id="import_policy_tree" model="ir.ui.view">
+        <field name="name">import.policy.tree</field>
+        <field name="model">import.policy</field>
+        <field name="arch" type="xml">
+            <tree edit="false" decoration-bf="strong==True">
+                <field name="name"/>
+                <field name="partner"/>
+                <field name="address"/>
+                <field name="user"/>
+                <field name="price"/>
+                <field name="policy_date_start"/>
+                <field name="policy_date_end"/>
+                <field name="cups"/>
+                <field name="technology"/>
+                <field name="type_point_messure"/>
+                <field name="type_installation"/>
+                <field name="type_read"/>
+                <field name="brand"/>
+                <field name="model"/>
+                <field name="serial_number"/>
+                <field name="rules"/>
+                <field name="name_description"/>
+                <field name="voltage"/>
+                <field name="namect"/>
+                <field name="id5"/>
+                <field name="pcp1"/>
+                <field name="pcp2"/>
+                <field name="pcp3"/>
+                <field name="pcp4"/>
+                <field name="pcp5"/>
+                <field name="pcp6"/>
+                <field name="msg"/>
+                <field name="strong" invisible="1"/>
+            </tree>
+        </field>
+    </record>
+
+<!--Action for call the wizard-->
+    <record id="action_import_policy" model="ir.actions.act_window">
+        <field name="name">Import Policy</field>
+        <field name="res_model">import.policy</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree</field>
+        <field name="target">current</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click in Import to create new policies.<br/>
+                Importation file must fulfill the following format:     
+            </p>
+            <p> 
+                <ul> 
+                    <li><b>name</b>: POLIZA</li>
+                    <li><b>partner</b>: CLIENTE</li>
+                    <li><b>address</b>: DIRECCIONSUMINISTRO</li>
+                    <li><b>user</b>: RESPONSABLE</li>
+                    <li><b>price</b>: TARIFA</li>
+                    <li><b>policy_date_start</b>: FECHAINICIO</li>
+                    <li><b>policy_date_end</b>: FECHACORTE</li>
+                    <li><b>cups</b>: CUPS</li>
+                    <li><b>technology</b>: TECNOLOGIA</li>
+                    <li><b>type_point_messure</b>: TIPO PUNTO MEDIDA</li>
+                    <li><b>type_installation</b>: TIPO INSTALACION</li>
+                    <li><b>type_read</b>: MEDIO LECTURA</li>
+                    <li><b>brand</b>: MARCA</li>
+                    <li><b>model</b >: MODELO</li>
+                    <li><b>serial_number</b>: NUMEROSERIE</li>
+                    <li><b>rules</b>: REGIMEN</li>
+                    <li><b>name_description</b>: NOMBRE DESCRIPTIVO DEL PUNTO</li>
+                    <li><b>voltage</b>: TRAMOTENSION</li>
+                    <li><b>namect</b>: NOMBRECT</li>
+                    <li><b>id5</b>: ID5</li>
+                    <li><b>pcp1</b>: PCP1</li>
+                    <li><b>pcp2</b>: PCP2</li>
+                    <li><b>pcp3</b>: PCP3</li>
+                    <li><b>pcp4</b>: PCP4</li>
+                    <li><b>pcp5</b>: PCP5</li>
+                    <li><b>pcp6</b>: PCP6</li>
+                </ul>
+            </p>
+        </field>
+    </record>
+
+    <record id="action_import_policy_tree_view" model="ir.actions.act_window.view">
+        <field name="sequence" eval="1"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="import_policy_tree"/>
+        <field name="act_window_id" ref="action_import_policy"/>
+    </record>
+
+    <!--Create Menu item-->
+    <menuitem id="import_policy_menu" 
+        name="Policy Import"
+        parent="project.menu_project_management"
+        action="action_import_policy"
+        sequence="2"
+        />
+</odoo>

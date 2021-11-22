@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+		<template id="report_general_ledger_lines_inherit" inherit_id="account_financial_report_qweb.report_general_ledger_lines">   
+            <xpath expr="//div[@class='act_as_row labels']/div[5]" position="replace">
+                <div class="act_as_cell" style="width: 4.44%;">Taxes</div>
+			</xpath>
+
+			<xpath expr="//div[@class='act_as_row labels']/div[4]" position="after">
+				<!--## Doc-->
+                <div class="act_as_cell" style="width: 4.45%;">Doc</div>
+			</xpath>
+
+            <xpath expr="//t[@t-foreach='account_or_partner_object.move_line_ids']/div[@class='act_as_row lines']/div[4]" position="after">
+                <!--## Doc-->
+                <div class="act_as_cell left">
+                    <t t-set="res_model" t-value="'account.move'"/>
+                    <span>
+                        <a t-att-data-active-id="line.move_line_id.move_id.id"
+                            t-att-data-res-model="res_model"
+                            class="o_account_financial_reports_web_action underline-on-hover"
+                            style="color: black; cursor: pointer;">
+                            <t t-raw="line.doc"/>
+                        </a>
+                    </span>
+                </div>
+            </xpath>
+		</template>
+    </data>
+</odoo>

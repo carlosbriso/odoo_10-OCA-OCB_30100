@@ -1,0 +1,192 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* ener_import_xml
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-01 13:54+0000\n"
+"PO-Revision-Date: 2019-04-01 13:54+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ener_import_xml
+#: model:ir.ui.view,arch_db:ener_import_xml.import_xml_wizard
+msgid "<span>This wizard allows you to import invoices from a XML file.</span>"
+msgstr "<span>Este asistente le permite importar facturas desde un archivo XML.</span>"
+
+#. module: ener_import_xml
+#: model:ir.ui.view,arch_db:ener_import_xml.import_xml_wizard
+msgid "<strong>GENERATED RECORDS</strong><br/>"
+msgstr "<strong>GENERATED RECORDS</strong><br/>"
+
+#. module: ener_import_xml
+#: model:ir.ui.view,arch_db:ener_import_xml.import_xml_wizard
+msgid "<strong>XML FILE IGNORED</strong><br/>"
+msgstr "<strong>XML FILE IGNORED</strong><br/>"
+
+#. module: ener_import_xml
+#: code:addons/ener_import_xml/models/account_invoice.py:120
+#, python-format
+msgid "Active energy"
+msgstr "Energía activa"
+
+#. module: ener_import_xml
+#: model:ir.actions.act_window,help:ener_import_xml.action_import_xml
+msgid "Attach a XML file to be attached to the generated record in Odoo.<br>\n"
+"                Click in Import to create new invoices."
+msgstr "Attach a XML file to be attached to the generated record in Odoo.<br>\n"
+"                Click in Import to create new invoices."
+
+#. module: ener_import_xml
+#: model:ir.ui.view,arch_db:ener_import_xml.import_xml_wizard
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: ener_import_xml
+#: model:ir.model.fields,field_description:ener_import_xml.field_import_xml_source_file
+msgid "Choose a XML File"
+msgstr "Elija un archivo XML"
+
+#. module: ener_import_xml
+#: model:ir.model.fields,field_description:ener_import_xml.field_account_invoice_103_code
+msgid "Code"
+msgstr "Código"
+
+#. module: ener_import_xml
+#: model:ir.model.fields,field_description:ener_import_xml.field_account_invoice_103_create_uid
+#: model:ir.model.fields,field_description:ener_import_xml.field_import_xml_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: ener_import_xml
+#: model:ir.model.fields,field_description:ener_import_xml.field_account_invoice_103_create_date
+#: model:ir.model.fields,field_description:ener_import_xml.field_import_xml_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: ener_import_xml
+#: model:ir.model.fields,field_description:ener_import_xml.field_account_invoice_103_display_name
+#: model:ir.model.fields,field_description:ener_import_xml.field_import_xml_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: ener_import_xml
+#: model:ir.model.fields,field_description:ener_import_xml.field_import_xml_error_msg
+msgid "Error message for attachments"
+msgstr "Error message for attachments"
+
+#. module: ener_import_xml
+#: model:ir.model.fields,field_description:ener_import_xml.field_import_xml_filename
+msgid "Filename"
+msgstr "Nombre de archivo"
+
+#. module: ener_import_xml
+#: model:ir.model.fields,field_description:ener_import_xml.field_account_invoice_103_id
+#: model:ir.model.fields,field_description:ener_import_xml.field_import_xml_id
+msgid "ID"
+msgstr "ID"
+
+#. module: ener_import_xml
+#: model:ir.ui.view,arch_db:ener_import_xml.import_xml_wizard
+msgid "Import"
+msgstr "Importar"
+
+#. module: ener_import_xml
+#: model:ir.actions.act_window,name:ener_import_xml.action_import_xml
+#: model:ir.ui.menu,name:ener_import_xml.import_xml_menu_payables
+#: model:ir.ui.menu,name:ener_import_xml.import_xml_menu_rereceivables
+msgid "Import XML"
+msgstr "Importar XML"
+
+#. module: ener_import_xml
+#: selection:import.xml,state:0
+msgid "Imported"
+msgstr "Importado"
+
+#. module: ener_import_xml
+#: selection:import.xml,state:0
+msgid "Importing"
+msgstr "Importando"
+
+#. module: ener_import_xml
+#: model:ir.model,name:ener_import_xml.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: ener_import_xml
+#: model:ir.model.fields,field_description:ener_import_xml.field_account_invoice_103___last_update
+#: model:ir.model.fields,field_description:ener_import_xml.field_import_xml___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: ener_import_xml
+#: model:ir.model.fields,field_description:ener_import_xml.field_account_invoice_103_write_uid
+#: model:ir.model.fields,field_description:ener_import_xml.field_import_xml_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: ener_import_xml
+#: model:ir.model.fields,field_description:ener_import_xml.field_account_invoice_103_write_date
+#: model:ir.model.fields,field_description:ener_import_xml.field_import_xml_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: ener_import_xml
+#: model:ir.model.fields,field_description:ener_import_xml.field_account_invoice_103_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: ener_import_xml
+#: model:ir.model.fields,field_description:ener_import_xml.field_import_xml_xml_msg
+msgid "OK message for records with no attachment"
+msgstr "OK message for records with no attachment"
+
+#. module: ener_import_xml
+#: code:addons/ener_import_xml/wizard/import_xml.py:122
+#, python-format
+msgid "Partner not found with this vat"
+msgstr "No existe ningún cliente con el DNI del fichero"
+
+#. module: ener_import_xml
+#: model:ir.ui.view,arch_db:ener_import_xml.import_xml_wizard
+msgid "Invoices Importation"
+msgstr "Importación de facturas"
+
+#. module: ener_import_xml
+#: code:addons/ener_import_xml/models/account_invoice.py:92
+#, python-format
+msgid "Power"
+msgstr "Potencia"
+
+#. module: ener_import_xml
+#: code:addons/ener_import_xml/models/account_invoice.py:145
+#, python-format
+msgid "Renting"
+msgstr "Alquileres"
+
+#. module: ener_import_xml
+#: model:ir.model.fields,field_description:ener_import_xml.field_import_xml_state
+msgid "Status"
+msgstr "Estado"
+
+#. module: ener_import_xml
+#: code:addons/ener_import_xml/models/account_invoice.py:61
+#, python-format
+msgid "Unknown"
+msgstr "Desconocido"
+
+#. module: ener_import_xml
+#: model:ir.model,name:ener_import_xml.model_account_invoice_103
+msgid "account.invoice.103"
+msgstr "account.invoice.103"
+
+#. module: ener_import_xml
+#: model:ir.model,name:ener_import_xml.model_import_xml
+msgid "import.xml"
+msgstr "import.xml"

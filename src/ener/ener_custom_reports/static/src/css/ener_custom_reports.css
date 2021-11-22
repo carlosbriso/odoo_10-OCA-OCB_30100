@@ -1,0 +1,38 @@
+
+.invoice_post_header h2 {
+    padding: 15px;
+    margin: 0px;
+    border: 4px solid #0271d8;
+    float: left;
+}
+
+.invoice_post_header div[name='invoice_address'] {
+    padding: 15px;
+    float: right;
+    border: 2px solid #0271d8 !important;
+    border-style: dashed !important;
+}
+
+.invoice_post_header div[name='invoice_address'] address {
+    margin: 0px;
+}
+
+table.invoice_data.table-bordered {
+    border: 2px solid #0271d8 !important;
+    margin-top: 20px;
+}
+
+table.invoice_data.table-bordered > thead > tr > th {
+    border: 2px solid #0271d8 !important;
+}
+
+table.invoice_data.table-bordered > tbody > tr > td {
+    border: 2px solid #0271d8 !important;
+}
+
+div.div-bordered {
+    border: 2px solid #0271d8 !important;
+    margin-top: 20px;
+    margin-left: 15px;
+    min-height: 150px;
+}

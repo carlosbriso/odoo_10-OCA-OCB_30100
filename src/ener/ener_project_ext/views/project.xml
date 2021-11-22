@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_task_search_form" model="ir.ui.view">
+            <field name="name">project.task.search.form</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_search_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='partner_id']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_task_form2" model="ir.ui.view">
+            <field name="name">project.task.form</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_form2"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='kanban_state']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="attributes">
+                    <attribute name="attrs">{'readonly': [('tstate', 'in', ['closed'])]}</attribute>
+                </xpath>
+                <xpath expr="//field[@name='project_id']" position="after">
+                    <field name="code"/>
+                </xpath>
+                <xpath expr="//field[@name='project_id']" position="attributes">
+                    <attribute name="attrs">{'readonly': [('tstate', 'in', ['closed'])]}</attribute>
+                </xpath>
+                <xpath expr="//field[@name='user_id']" position="attributes">
+                    <attribute name="attrs">{'readonly': [('tstate', 'in', ['closed'])]}</attribute>
+                </xpath>
+                <xpath expr="//field[@name='description']" position="attributes">
+                    <attribute name="attrs">{'readonly': [('create_date', '!=', False)]}</attribute>
+                </xpath>
+                <xpath expr="//button[@name='toggle_active']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <!-- <xpath expr="//field[@name='partner_id']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath> -->
+                <xpath expr="//field[@name='date_deadline']" position="attributes">
+                    <attribute name="attrs">{'readonly': [('tstate', 'in', ['closed'])]}</attribute>
+                    <attribute name="required">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='date_deadline']" position="before">
+                    <field name="create_date" widget="date" readonly="1"/>
+                    <field name="date_start" required="1" widget="date" attrs="{'readonly': [('tstate', 'in', ['closed'])]}"/>
+                    <field name="date_end" widget="date" attrs="{'readonly': True, 'invisible': [('tstate', 'not in', ['closed'])]}"/>
+                </xpath>
+                <xpath expr="//field[@name='tag_ids']" position="attributes">
+                    <attribute name="attrs">{'readonly': [('tstate', 'in', ['closed'])]}</attribute>
+                </xpath>
+                <xpath expr="//field[@name='stage_id']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='stage_id']" position="after">
+                    <field name="tstate" widget="statusbar" options="{'fold_field': 'fold'}"/>
+                    <button name="task_set_open" string="Open" type="object" attrs="{'invisible': [('tstate', 'not in', ['closed'])]}"/>
+                    <button name="task_set_closed" string="Close" type="object" class="oe_highlight" attrs="{'invisible': [('tstate', 'in', ['closed'])]}"/>
+                </xpath>
+                <xpath expr="//field[@name='sequence']" position="attributes">
+                    <attribute name="attrs">{'readonly': [('tstate', 'in', ['closed'])]}</attribute>
+                </xpath>
+                <xpath expr="//field[@name='displayed_image_id']" position="attributes">
+                    <attribute name="attrs">{'readonly': [('tstate', 'in', ['closed'])]}</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_task_form2_inherited" model="ir.ui.view">
+            <field name="name">project.task.form.inherited</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="hr_timesheet.view_task_form2_inherited"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='planned_hours']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='progress']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='timesheet_ids']" position="attributes">
+                    <attribute name="attrs">{'readonly': [('tstate', 'in', ['closed'])]}</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_sale_service_inherit_form2" model="ir.ui.view">
+            <field name="name">sale.service.form.view.inherit</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="sale_timesheet.view_sale_service_inherit_form2"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='procurement_id']" position="attributes">
+                    <attribute name="attrs">{'readonly': [('tstate', 'in', ['closed'])]}</attribute>
+                </xpath>
+                <xpath expr="//field[@name='sale_line_id']" position="attributes">
+                    <attribute name="attrs">{'readonly': [('tstate', 'in', ['closed'])]}</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_task_tree2" model="ir.ui.view">
+            <field name="name">project.task.tree</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_tree2"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='project_id']" position="after">
+                    <field name="code"/>
+                </xpath>
+                <xpath expr="//field[@name='date_deadline']" position="attributes">
+                    <attribute name="invisible">0</attribute>
+                </xpath>
+                <xpath expr="//field[@name='date_deadline']" position="before">
+                    <field name="create_date" widget="date"/>
+                    <field name="date_start" widget="date"/>
+                    <field name="date_end" widget="date"/>
+                </xpath>
+                <xpath expr="//field[@name='stage_id']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='stage_id']" position="after">
+                    <field name="tstate"/>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="attributes">
+                    <attribute name="bg_color">White: tstate == 'open'; LightGreen: tstate == 'process'; LightCoral: tstate == 'out'; Black: tstate == 'closed';</attribute>
+                    <attribute name="fg_color">Black: tstate == 'open'; Black: tstate == 'process'; Black: tstate == 'out'; White: tstate == 'closed';</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_task_tree2_inherited" model="ir.ui.view">
+            <field name="name">project.task.tree.inherited</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="hr_timesheet.view_task_tree2_inherited"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='planned_hours']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='remaining_hours']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='progress']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <!--Create Menu-->
+        <menuitem id="tasks_menu" 
+          name="Tasks"
+          action="project.action_view_task"
+          web_icon="ener_project_ext,static/description/expedientes.png"
+          sequence="99"/>
+    </data>
+</odoo>

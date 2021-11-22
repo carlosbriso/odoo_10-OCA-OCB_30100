@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+
+    <data>
+
+        <template id="assets_backend" name="template_translations assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/anb_template_translations/static/src/css/template_translations.css"/>
+                <script type="text/javascript" src="/anb_template_translations/static/src/js/template_translations.js"></script>
+            </xpath>
+        </template>
+
+    </data>
+
+</openerp>

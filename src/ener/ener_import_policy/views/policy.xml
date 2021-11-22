@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--View policy_view_tree-->
+    <record model="ir.ui.view" id="policy_view_tree">
+        <field name="name">policy.view.tree</field>
+        <field name="model">policy.policy</field>
+        <field name="priority" eval="14"/>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Policy">
+                <field name="name"/>
+                <field name="partner"/>
+                <field name="address"/>
+                <field name="user"/>
+                <field name="price"/>
+                <field name="policy_date_start"/>
+                <field name="policy_date_end"/>
+                <field name="cups"/>
+                <field name="technology"/>
+                <field name="type_point_messure"/>
+                <field name="type_installation"/>
+                <field name="type_read"/>
+                <field name="brand"/>
+                <field name="model"/>
+                <field name="serial_number"/>
+                <field name="rules"/>
+                <field name="name_description"/>
+                <field name="voltage"/>
+                <field name="namect"/>
+                <field name="id5"/>
+                <field name="pcp1"/>
+                <field name="pcp2"/>
+                <field name="pcp3"/>
+                <field name="pcp4"/>
+                <field name="pcp5"/>
+                <field name="pcp6"/>
+            </tree>
+        </field>
+    </record>
+    
+    <!--Create action-->
+    <record id="action_policy_view" model="ir.actions.act_window">
+        <field name="name">Policy</field>
+        <field name="res_model">policy.policy</field>
+        <field name="view_type">tree</field>
+        <field name="view_mode">tree</field>
+        <field name="target">new</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Tree view of policy.<br/>
+                Click in Import to add new policy.
+            </p>
+        </field>
+    </record>
+
+    <!--Create Menu-->
+    <menuitem id="policy_menu" 
+          name="Policy"
+          parent="project.menu_project_management"
+          action="action_policy_view"
+          sequence=""/>
+</odoo>

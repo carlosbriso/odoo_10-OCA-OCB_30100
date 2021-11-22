@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data noupdate="0">
+
+        <record id="access_account_asset_asset_trace_user" model="ir.model.access">
+            <field name="name">access_account_asset_asset_trace: base.group user can do everything</field>
+            <field name="model_id" ref="ener_asset_trace.model_account_asset_asset_trace"/>
+            <field name="group_id" ref="base.group_user"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="active" eval="True"/>
+        </record>
+
+        <record id="access_res_country_parish_user" model="ir.model.access">
+            <field name="name">access_res_country_parish_trace_zone: base.group user can do everything</field>
+            <field name="model_id" ref="ener_asset_trace.model_res_country_parish"/>
+            <field name="group_id" ref="base.group_user"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="active" eval="True"/>
+        </record>
+
+        <record id="access_res_country_nucleus_user" model="ir.model.access">
+            <field name="name">access_res_country_nucleus_trace_zone: base.group user can do everything</field>
+            <field name="model_id" ref="ener_asset_trace.model_res_country_nucleus"/>
+            <field name="group_id" ref="base.group_user"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="active" eval="True"/>
+        </record>
+
+        <record id="access_account_asset_asset_trace_zone_user" model="ir.model.access">
+            <field name="name">access_account_asset_asset_trace_zone: base.group user can do everything</field>
+            <field name="model_id" ref="ener_asset_trace.model_account_asset_asset_trace_zone"/>
+            <field name="group_id" ref="base.group_user"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="active" eval="True"/>
+        </record>
+
+        <record id="access_account_asset_asset_trace_ct_user" model="ir.model.access">
+            <field name="name">access_account_asset_asset_trace_ct: base.group user can do everything</field>
+            <field name="model_id" ref="ener_asset_trace.model_account_asset_asset_trace_ct"/>
+            <field name="group_id" ref="base.group_user"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="active" eval="True"/>
+        </record>
+
+        <record id="access_account_asset_asset_trace_origin_line_user" model="ir.model.access">
+            <field name="name">access_account_asset_asset_trace_origin_line: base.group user can do everything</field>
+            <field name="model_id" ref="ener_asset_trace.model_account_asset_asset_trace_origin_line"/>
+            <field name="group_id" ref="base.group_user"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="active" eval="True"/>
+        </record>
+
+    </data>
+
+</odoo>

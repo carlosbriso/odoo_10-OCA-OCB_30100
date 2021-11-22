@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--HEADER LAYOUT-->
+        <template id="external_layout_header_custom" inherit_id="anb_custom_reports.custom_external_layout_header">
+            <xpath expr="//div[@class='col-xs-7']" position="after">
+                <div class="col-xs-5 text-right" name="company_info">
+                    <div>
+                        <span>Phone: </span>
+                        <span t-field="company.partner_id.phone"/>
+                    </div>
+                    <div t-if="company.fax">
+                        <span>Fax: </span>
+                        <span t-field="company.partner_id.fax"/>
+                    </div>
+                    <div>
+                        <span>Email: </span>
+                        <span t-field="company.partner_id.email"/>
+                    </div>
+                    <div t-if="company.website">
+                        <span>Website: </span>
+                        <span t-field="company.partner_id.website"/>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+
+        <!--FOOTER LAYOUT-->
+        <template id="external_layout_footer_custom" inherit_id="report.external_layout_footer">
+            <xpath expr="//div[@class='text-center']/ul[1]" position="attributes">
+                <attribute name="class">list-inline hidden</attribute>
+            </xpath>
+
+            <xpath expr="//div[@class='text-center']/ul[2]" position="attributes">
+                <attribute name="class">list-inline hidden</attribute>
+            </xpath>
+
+            <xpath expr="//div[@class='text-center']/ul[2]" position="after">
+                <strong style="font-size: 0.75em"><span t-field="company.company_registry"/></strong>
+            </xpath>
+        </template>
+    </data>
+</odoo>
