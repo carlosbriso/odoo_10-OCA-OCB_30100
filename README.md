@@ -20,6 +20,8 @@
 
 **#logfile =** /opt/odoo/odoo_10/log/odoo_10_30100.log
 
+...
+
 :pushpin: **Entorno Virtual -> virtualenv -> python2.7**
 
 **anubia@hp ~/odoo_10 $** source odoo_10_30100-virtualenv/bin/activate
