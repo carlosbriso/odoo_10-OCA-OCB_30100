@@ -4,7 +4,9 @@
 #### Configuración:
 
 **anubia@hp ~/odoo_10 $** vim config/odoo_10_30100.cfg
-[options]
+
+**[options]**
+
 #### # Inicial con addons estandares.
 **#addons_path =** /opt/odoo/odoo_10/src/OCA/OCB/odoo/addons,/opt/odoo/odoo_10/src/OCA/OCB/addons
 
