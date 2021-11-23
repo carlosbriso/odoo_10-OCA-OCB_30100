@@ -32,8 +32,11 @@ Description=Odoo 10.0 ERP server (cba) → 30100_db-clean → 30100/tcp => logs:
 After=postgresql-12.service
 
 [Service]
+
 Type=simple
+
 User=anubia
+
 Group=anubia
 
 ExecStart=/opt/odoo/odoo_10/odoo_10-virtualenv/bin/python2.7 /opt/odoo/odoo_10/src/OCA/OCB/odoo-bin -c  /opt/odoo/odoo_10/config/odoo_10.cfg
