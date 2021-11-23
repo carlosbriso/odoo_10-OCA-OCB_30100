@@ -1,4 +1,0 @@
-reporting-engine
-connector
-server-tools
-web
