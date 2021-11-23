@@ -37,5 +37,5 @@ ExecStart=/opt/odoo/odoo_10/odoo_10-virtualenv/bin/python2.7 /opt/odoo/odoo_10/s
 WantedBy=multi-user.target
 
 
-**(c) cba - 2021**
+**(c) carlos briso (cba) - 2021**
 
