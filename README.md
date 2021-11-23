@@ -1,7 +1,7 @@
 ## :memo: odoo_10-OCA-OCB_30100
 
 :pushpin: **odoo_10-OCA-OCB_30100 -> 30100_db-clean**
-:pushpin: **Configuración:**
+#### Configuración:
 
 **anubia@hp ~/odoo_10 $** vim config/odoo_10_30100.cfg
 [options]
