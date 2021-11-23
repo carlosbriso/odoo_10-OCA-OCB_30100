@@ -19,7 +19,9 @@
 **#logfile =** /opt/odoo/odoo_10/log/odoo_10_30100.log
 
 :pushpin: **Entorno Virtual -> virtualenv -> python2.7**
+
 **anubia@hp ~/odoo_10 $** source odoo_10_30100-virtualenv/bin/activate
+
 **(odoo_10_30100-virtualenv) anubia@hp ~/odoo_10 $** /opt/odoo/odoo_10/src/OCA/OCB/odoo-bin -c config/odoo_10_30100.cfg
 
 :pushpin: **/etc/systemd/system/odoo_10_30100.service**
