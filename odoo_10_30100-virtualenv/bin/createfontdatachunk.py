@@ -1,4 +1,4 @@
-#!/opt/odoo/odoo_10/odoo_10_30100-virtualenv/bin/python
+#!/opt/odoo/odoo_10/odoo_10_30100-virtualenv/bin/python2
 from __future__ import print_function
 import base64
 import os

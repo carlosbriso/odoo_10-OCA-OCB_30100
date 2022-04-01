@@ -7,6 +7,7 @@ __metaclass__ = type
 
 import json
 import os.path
+import sys
 import tempfile
 
 import pytest
@@ -18,6 +19,10 @@ from ansible_collections.netapp.um_info.plugins.module_utils.netapp import COLLE
 from ansible_collections.netapp.um_info.tests.unit.compat.mock import patch
 
 import ansible_collections.netapp.um_info.plugins.module_utils.netapp as netapp_utils
+
+
+if not netapp_utils.HAS_REQUESTS and sys.version_info < (2, 7):
+    pytestmark = pytest.mark.skip('Skipping Unit Tests on 2.6 as requests is not be available')
 
 
 def set_module_args(args):

@@ -1,6 +1,8 @@
 from re import Pattern
 from re import RegexFlag
 
+from .util import U_EMPTY_STRING, U_SPACE, U_DASH, U_TILDE, U_ZERO, U_SEMICOLON
+from .phonemetadata import REGION_CODE_FOR_NON_GEO_ENTITY
 from .phonemetadata import NumberFormat
 from .phonemetadata import PhoneMetadata
 from .phonemetadata import PhoneNumberDesc
@@ -67,6 +69,8 @@ class PhoneNumberFormat:
     INTERNATIONAL: int
     NATIONAL: int
     RFC3966: int
+    @classmethod
+    def to_string(cls, val: int) -> str: ...
 
 class PhoneNumberType:
     FIXED_LINE: int
@@ -83,6 +87,8 @@ class PhoneNumberType:
     UNKNOWN: int
     @classmethod
     def values(cls) -> tuple[int, ...]: ...
+    @classmethod
+    def to_string(cls, val: int) -> str: ...
 
 class MatchType:
     NOT_A_NUMBER: int
@@ -90,6 +96,8 @@ class MatchType:
     SHORT_NSN_MATCH: int
     NSN_MATCH: int
     EXACT_MATCH: int
+    @classmethod
+    def to_string(cls, val: int) -> str: ...
 
 class ValidationResult:
     IS_POSSIBLE: int
@@ -98,6 +106,8 @@ class ValidationResult:
     TOO_SHORT: int
     INVALID_LENGTH: int
     TOO_LONG: int
+    @classmethod
+    def to_string(cls, val: int) -> str: ...
 
 SUPPORTED_REGIONS: set[str]
 COUNTRY_CODES_FOR_NON_GEO_REGIONS: set[int]

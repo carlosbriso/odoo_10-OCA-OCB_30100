@@ -1,4 +1,4 @@
-#!/opt/odoo/odoo_10/odoo_10_30100-virtualenv/bin/python
+#!/opt/odoo/odoo_10/odoo_10_30100-virtualenv/bin/python2
 #
 # Very simple serial terminal
 #

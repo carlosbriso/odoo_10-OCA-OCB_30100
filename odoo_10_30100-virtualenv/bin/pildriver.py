@@ -1,4 +1,4 @@
-#!/opt/odoo/odoo_10/odoo_10_30100-virtualenv/bin/python
+#!/opt/odoo/odoo_10/odoo_10_30100-virtualenv/bin/python2
 """PILdriver, an image-processing calculator using PIL.
 
 An instance of class PILDriver is essentially a software stack machine

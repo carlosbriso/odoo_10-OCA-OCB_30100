@@ -3,7 +3,7 @@
 :pushpin: **odoo_10-OCA-OCB_30100 -> 30100_db-clean**
 #### Configuración:
 
-**anubia@hp ~/odoo_10 $** vim config/odoo_10_30100.cfg
+**odoo@hp ~/odoo_10 $** vim config/odoo_10_30100.cfg
 
 **[options]**
 
@@ -24,9 +24,9 @@
 
 :pushpin: **Entorno Virtual -> virtualenv -> python2.7**
 
-**anubia@hp ~/odoo_10 $** source odoo_10_30100-virtualenv/bin/activate
+**odoo@hp ~/odoo_10 $** source odoo_10_30100-virtualenv/bin/activate
 
-**(odoo_10_30100-virtualenv) anubia@hp ~/odoo_10 $** /opt/odoo/odoo_10/src/OCA/OCB/odoo-bin -c config/odoo_10_30100.cfg
+**(odoo_10_30100-virtualenv) odoo@hp ~/odoo_10 $** /opt/odoo/odoo_10/src/OCA/OCB/odoo-bin -c config/odoo_10_30100.cfg
 
 :pushpin: **/etc/systemd/system/odoo_10_30100.service**
 
@@ -40,9 +40,9 @@ After=postgresql-12.service
 
 Type=simple
 
-User=anubia
+User=odoo
 
-Group=anubia
+Group=odoo
 
 ExecStart=/opt/odoo/odoo_10/odoo_10-virtualenv/bin/python2.7 /opt/odoo/odoo_10/src/OCA/OCB/odoo-bin -c  /opt/odoo/odoo_10/config/odoo_10.cfg
 

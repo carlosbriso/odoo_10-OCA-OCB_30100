@@ -1,4 +1,4 @@
-#!/opt/odoo/odoo_10/odoo_10_30100-virtualenv/bin/python
+#!/opt/odoo/odoo_10/odoo_10_30100-virtualenv/bin/python2
 
 # $Id: rst2latex.py 5905 2009-04-16 12:04:49Z milde $
 # Author: David Goodger <goodger@python.org>

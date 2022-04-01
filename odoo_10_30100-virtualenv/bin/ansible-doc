@@ -1,4 +1,4 @@
-#!/opt/odoo/odoo_10/odoo_10_30100-virtualenv/bin/python
+#!/opt/odoo/odoo_10/odoo_10_30100-virtualenv/bin/python2
 # -*- coding: utf-8 -*-
 # (c) 2012, Michael DeHaan <michael.dehaan@gmail.com>
 #
