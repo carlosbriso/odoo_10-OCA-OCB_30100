@@ -12,7 +12,7 @@
 
 #### # Configuración cba.
 
-**addons_path =** /opt/odoo/odoo_10/src/OCA/OCB/odoo/addons,/opt/odoo/odoo_10/src/OCA/OCB/addons,/opt/odoo/odoo_10/src/OCA,/opt/odoo/odoo_10/src/anb,/opt/odoo/odoo_10/src/ener,/opt/odoo/odoo_10/src/external,/opt/odoo/odoo_10/src/linked,/opt/odoo/odoo_10/src/others
+**addons_path =** /opt/odoo/odoo_10/src/OCA/OCB/odoo/addons,/opt/odoo/odoo_10/src/OCA/OCB/addons,/opt/odoo/odoo_10/src/OCA,/opt/odoo/odoo_10/src/anb,/opt/odoo/odoo_10/src/ener,/opt/odoo/odoo_10/src/external,/opt/odoo/odoo_10/src/linked,/opt/odoo/odoo_10/src/others,/opt/odoo/odoo_10/src/muk
 
 **db_name =** 30100_db-clean
 
