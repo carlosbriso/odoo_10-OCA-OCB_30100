@@ -1,1 +1,1 @@
-/opt/odoo/odoo_10/src/OCA/OCB/odoo-bin -d 30100_db-clean --db-filter=^30100_db-clean$ -c /opt/odoo/odoo_10/config/odoo_10_30100.cfg --save --xmlrpc-port=30100 --db_user=anubia --db_password=anubia --without-demo=True --logfile=/opt/odoo/odoo_10/log/odoo_10_30100.log --stop-after-init 
+/opt/odoo/odoo_10/src/OCA/OCB/odoo-bin -d 30200_db-clean --db-filter=^30200_db-clean$ -c /opt/odoo/odoo_10/config/odoo_10_30200.cfg --save --xmlrpc-port=30200 --db_user=odoo --db_password=odoo --without-demo=True --logfile=/opt/odoo/odoo_10/log/odoo_10_30200.log --stop-after-init 
