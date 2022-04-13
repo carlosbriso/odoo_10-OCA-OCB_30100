@@ -1,9 +1,9 @@
-## :memo: odoo_10-OCA-OCB_30100
+## :memo: odoo_10-OCA-OCB_30200
 
-:pushpin: **odoo_10-OCA-OCB_30100 -> 30100_db-clean**
+:pushpin: **odoo_10-OCA-OCB_30200 -> 30200_db-clean**
 #### Configuración:
 
-**odoo@hp ~/odoo_10 $** vim config/odoo_10_30100.cfg
+**odoo@hp ~/odoo_10 $** vim config/odoo_10_30200.cfg
 
 **[options]**
 
@@ -14,25 +14,25 @@
 
 **addons_path =** /opt/odoo/odoo_10/src/OCA/OCB/odoo/addons,/opt/odoo/odoo_10/src/OCA/OCB/addons,/opt/odoo/odoo_10/src/OCA,/opt/odoo/odoo_10/src/anb,/opt/odoo/odoo_10/src/ener,/opt/odoo/odoo_10/src/external,/opt/odoo/odoo_10/src/linked,/opt/odoo/odoo_10/src/others,/opt/odoo/odoo_10/src/muk
 
-**db_name =** 30100_db-clean
+**db_name =** 30200_db-clean
 
-**dbfilter =** ^30100_db-clean$
+**dbfilter =** ^30200_db-clean$
 
-**#logfile =** /opt/odoo/odoo_10/log/odoo_10_30100.log
+**#logfile =** /opt/odoo/odoo_10/log/odoo_10_30200.log
 
 ...
 
 :pushpin: **Entorno Virtual -> virtualenv -> python2.7**
 
-**odoo@hp ~/odoo_10 $** source odoo_10_30100-virtualenv/bin/activate
+**odoo@hp ~/odoo_10 $** source odoo_10_30200-virtualenv/bin/activate
 
-**(odoo_10_30100-virtualenv) odoo@hp ~/odoo_10 $** /opt/odoo/odoo_10/src/OCA/OCB/odoo-bin -c config/odoo_10_30100.cfg
+**(odoo_10_30200-virtualenv) odoo@hp ~/odoo_10 $** /opt/odoo/odoo_10/src/OCA/OCB/odoo-bin -c config/odoo_10_30200.cfg
 
-:pushpin: **/etc/systemd/system/odoo_10_30100.service**
+:pushpin: **/etc/systemd/system/odoo_10_30200.service**
 
 [Unit]
 
-Description=Odoo 10.0 ERP server (cba) → 30100_db-clean → 30100/tcp => logs: /opt/odoo/odoo_10/log/odoo_10_30100.log
+Description=Odoo 10.0 ERP server (cba) → 30200_db-clean → 30200/tcp => logs: /opt/odoo/odoo_10/log/odoo_10_30200.log
 
 After=postgresql-12.service
 

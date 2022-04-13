@@ -1,7 +1,0 @@
-#!/opt/odoo/odoo_10/odoo_10_30100-virtualenv/bin/python2
-# EASY-INSTALL-DEV-SCRIPT: 'odoo==10.0','odoo'
-__requires__ = 'odoo==10.0'
-__import__('pkg_resources').require('odoo==10.0')
-__file__ = '/opt/odoo/odoo_10/src/OCA/OCB/setup/odoo'
-with open(__file__) as f:
-    exec(compile(f.read(), __file__, 'exec'))
