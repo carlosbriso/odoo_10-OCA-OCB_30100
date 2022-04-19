@@ -16,9 +16,18 @@
 
 **db_name =** 30200_db-clean
 
+**db_user =** odoo
+
+**db_password =** odoo
+
 **dbfilter =** ^30200_db-clean$
 
+## cba -> por motivos de tails directos -> Debe COMENTARSE esta línea, para el debug. Despues debe DESCOMENTARSE de nuevo !!!.
+## Debe crearse el archivo log asociado tambien => odoo_10_30200.log
+
 **#logfile =** /opt/odoo/odoo_10/log/odoo_10_30200.log
+
+**logrotate =** True
 
 ...
 
