@@ -30,7 +30,7 @@ NAME=odoo-server_10
 DESC=odoo-server_v10
 
 # Specify the user name (Default: odoo).
-USER=anubia
+USER=odoo
 
 # Specify an alternate config file (Default: /etc/openerp-server.conf).
 CONFIGFILE=/opt/odoo/odoo_10/config/.odoo_10.conf
