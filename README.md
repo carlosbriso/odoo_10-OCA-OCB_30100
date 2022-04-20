@@ -59,6 +59,12 @@ ExecStart=/opt/odoo/odoo_10/odoo_10_30200-virtualenv/bin/python2.7 /opt/odoo/odo
 
 WantedBy=multi-user.target
 
+:pushpin: **Entorno Virtual -> virtualenvWrapper -> python2.7**
+
+## virtualenvwrapper-cba.
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.10
+export WORKON_HOME=/opt/odoo/odoo_10 			# NO es por defecto.
+source /usr/bin/virtualenvwrapper.sh
 
 **(c) carlos briso (cba) - 2022**
 
