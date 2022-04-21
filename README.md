@@ -31,11 +31,11 @@
 
 ...
 
-:pushpin: **Entorno Virtual -> virtualenv -> python2.7**
+:pushpin: **Entorno Virtual -> virtualenv-wrapper -> python2.7**
 
-**odoo@hp ~/odoo_10 $** source odoo_10_30200-virtualenv/bin/activate
+**odoo@hp ~/odoo_10 $** source odoo_10_30200-virtualenv-wrapper/bin/activate
 
-**(odoo_10_30200-virtualenv) odoo@hp ~/odoo_10 $** /opt/odoo/odoo_10/src/OCA/OCB/odoo-bin -c config/odoo_10_30200.cfg
+**(odoo_10_30200-virtualenv-wrapper) odoo@hp ~/odoo_10 $** /opt/odoo/odoo_10/src/OCA/OCB/odoo-bin -c config/odoo_10_30200.cfg
 
 :pushpin: **/etc/systemd/system/odoo_10_30200.service**
 
@@ -53,19 +53,19 @@ User=odoo
 
 Group=odoo
 
-ExecStart=/opt/odoo/odoo_10/odoo_10_30200-virtualenv/bin/python2.7 /opt/odoo/odoo_10/src/OCA/OCB/odoo-bin -c  /opt/odoo/odoo_10/config/odoo_10_30200.cfg
+ExecStart=/opt/odoo/odoo_10/odoo_10_30200-virtualenv-wrapper/bin/python2.7 /opt/odoo/odoo_10/src/OCA/OCB/odoo-bin -c  /opt/odoo/odoo_10/config/odoo_10_30200.cfg
 
 [Install]
 
 WantedBy=multi-user.target
 
-:pushpin: **Entorno Virtual -> virtualenvWrapper -> python2.7**
+:pushpin: **Entorno Virtual -> virtualenv-wrapperWrapper -> python2.7**
 
 **export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.10**
 
 **export WORKON_HOME=/opt/odoo/odoo_10 			# NO es por defecto.**
 
-**source /usr/bin/virtualenvwrapper.sh**
+**source /usr/bin/virtualenv-wrapperwrapper.sh**
 
 **(c) carlos briso (cba) - 2022**
 
