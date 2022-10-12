@@ -43,7 +43,7 @@
 
 Description=Odoo 10.0 ERP server (cba) → 30200_db-clean → 30200/tcp => logs: /opt/odoo/odoo_10/log/odoo_10_30200.log
 
-After=postgresql-12.service
+After=postgresql-14.service
 
 [Service]
 
@@ -53,7 +53,8 @@ User=odoo
 
 Group=odoo
 
-ExecStart=/opt/odoo/odoo_10/odoo_10_30200-virtualenv-wrapper/bin/python2.7 /opt/odoo/odoo_10/src/OCA/OCB/odoo-bin -c  /opt/odoo/odoo_10/config/odoo_10_30200.cfg
+ExecStart=/opt/odoo/odoo_10/odoo_10_30200-virtualenv-wrapper/bin/python2.7 /opt/odoo/odoo_10/src/OCA/OCB/odoo-bin -c /opt/odoo/odoo_10/config/odoo_10_30200.cfg
+
 
 [Install]
 
