@@ -68,9 +68,9 @@ WantedBy=multi-user.target
 
 **source /usr/bin/virtualenv-wrapperwrapper.sh**
 
-$ lsvirtualenv 
-odoo_10_30200-virtualenv-wrapper
-================================
+:pushpin: **$ lsvirtualenv** 
+**odoo_10_30200-virtualenv-wrapper**
+**================================**
 
 **(c) carlos briso (cba) - 2022**
 
