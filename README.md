@@ -23,7 +23,7 @@
 **dbfilter =** ^30200_db-clean$
 
 #### #cba -> Por motivos de tails directos -> Debe COMENTARSE esta línea, para el debug. Despues debe DESCOMENTARSE !!!.
-#### #Debe crearse el archivo log asociado tambien => odoo_10_30200.log
+#### #Debe crearse el directorio base => $ mkdir /opt/odoo/odoo_10/log/ -p
 
 **#logfile =** /opt/odoo/odoo_10/log/odoo_10_30200.log
 
