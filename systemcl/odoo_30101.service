@@ -1,5 +1,6 @@
 [Unit]
-Description=Odoo 10.0 ERP server (fosle/cba) → Los_Molinos_Servicios_Auxiliares → 30101/tcp
+Description=Odoo 10.0 ERP server (fosle/cba) → Los_Molinos_Servicios_Auxiliares → 30101/tcp -> logs: /opt/odoo/odoo_10/log/odoo_10_30101.log
+
 After=postgresql-14.service
 
 [Service]

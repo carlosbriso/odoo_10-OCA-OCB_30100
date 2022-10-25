@@ -1,5 +1,5 @@
 [Unit]
-Description=Odoo 10.0 ERP server (fosle/cba) → prueba_30200 → 30200/tcp
+Description=Odoo 10.0 ERP server (fosle/cba) → prueba_30200 → 30200/tcp -> logs: /opt/odoo/odoo_10/log/odoo_10_30200.log
 After=postgresql-14.service
 
 [Service]
