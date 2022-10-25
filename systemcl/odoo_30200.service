@@ -1,0 +1,18 @@
+[Unit]
+Description=Odoo 10.0 ERP server (fosle/cba) → prueba_30200 → 30200/tcp
+After=postgresql-14.service
+
+[Service]
+Type=simple
+User=odoo
+Group=odoo
+
+#ExecStart=/opt/odoo/odoo_10_30102/odoo_10_30102-virtualenv/bin/python2.7 /opt/odoo/odoo_10_30102/src/OCA/OCB/odoo-bin -c  /opt/odoo/odoo_10_30102/config/.odoo_10.conf
+
+ExecStart=/opt/odoo/odoo_10/odoo_10_30200-virtualenv-wrapper/bin/python2.7 /opt/odoo/odoo_10/src/OCA/OCB/odoo-bin -c /opt/odoo/odoo_10/config/odoo_10_30200.cfg
+
+
+
+
+[Install]
+WantedBy=multi-user.target
