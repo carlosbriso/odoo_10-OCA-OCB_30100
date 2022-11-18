@@ -1,0 +1,208 @@
+2022-10-26 08:34:44,763 20597 INFO ? odoo: Odoo version 10.0
+2022-10-26 08:34:44,777 20597 INFO ? odoo: Using configuration file at /opt/odoo/odoo_10/config/odoo_10_30200.cfg
+2022-10-26 08:34:44,777 20597 INFO ? odoo: addons paths: ['/opt/odoo/odoo_10/odoo_10_30200-virtualenv-wrapper/lib/python2.7/site-packages/odoo/addons', '/opt/odoo/odoo_10/src/OCA/OCB/odoo/addons', '/opt/odoo/.local/share/Odoo/addons/10.0', u'/opt/odoo/odoo_10/src/OCA/OCB/addons', u'/opt/odoo/odoo_10/src/OCA', u'/opt/odoo/odoo_10/src/anb', u'/opt/odoo/odoo_10/src/ener', u'/opt/odoo/odoo_10/src/external', u'/opt/odoo/odoo_10/src/linked', u'/opt/odoo/odoo_10/src/others', u'/opt/odoo/odoo_10/src/muk']
+2022-10-26 08:34:44,777 20597 INFO ? odoo: database: odoo@default:default
+2022-10-26 08:34:45,046 20597 INFO ? odoo.service.server: HTTP service (werkzeug) running on hp.cadilinea.lan:30200
+2022-10-26 08:34:45,742 20597 INFO prueba_30200 odoo.modules.loading: loading 1 modules...
+2022-10-26 08:34:47,347 20597 INFO prueba_30200 odoo.modules.loading: 1 modules loaded in 1.60s, 0 queries
+2022-10-26 08:34:49,168 20597 INFO prueba_30200 odoo.modules.loading: loading 123 modules...
+2022-10-26 08:34:52,448 20597 INFO prueba_30200 odoo.addons.report.models.report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2022-10-26 08:34:53,141 20597 WARNING prueba_30200 py.warnings: /opt/odoo/odoo_10/odoo_10_30200-virtualenv-wrapper/lib/python2.7/site-packages/paramiko/transport.py:33: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.backends import default_backend
+
+2022-10-26 08:35:00,496 20597 INFO prueba_30200 odoo.modules.loading: 123 modules loaded in 11.33s, 0 queries
+2022-10-26 08:35:00,859 20597 WARNING prueba_30200 odoo.fields: Field customer.invoice.lines.customer_wizard_id with unknown comodel_name 'account.multi.payments'
+2022-10-26 08:35:00,884 20597 WARNING prueba_30200 odoo.fields: Field res.country.parish.state_id with unknown comodel_name None
+2022-10-26 08:35:00,958 20597 WARNING prueba_30200 odoo.fields: Field supplier.invoice.lines.supplier_wizard_id with unknown comodel_name 'account.multi.payments'
+2022-10-26 08:35:01,160 20597 WARNING prueba_30200 odoo.fields: Field account.asset.asset.trace.urban_nucleus_id with unknown comodel_name 'res.country.core'
+2022-10-26 08:35:01,173 20597 WARNING prueba_30200 odoo.fields: Field res.country.nucleus.state_id with unknown comodel_name None
+2022-10-26 08:35:01,374 20597 INFO prueba_30200 odoo.modules.loading: Modules loaded.
+2022-10-26 08:35:42,045 20597 INFO prueba_30200 odoo.service.server: Initiating shutdown
+2022-10-26 08:35:42,045 20597 INFO prueba_30200 odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown.
+2022-10-26 08:35:57,984 20956 INFO ? odoo: Odoo version 10.0
+2022-10-26 08:35:57,984 20956 INFO ? odoo: Using configuration file at /opt/odoo/odoo_10/config/odoo_10_30200.cfg
+2022-10-26 08:35:57,984 20956 INFO ? odoo: addons paths: ['/opt/odoo/odoo_10/odoo_10_30200-virtualenv-wrapper/lib/python2.7/site-packages/odoo/addons', '/opt/odoo/odoo_10/src/OCA/OCB/odoo/addons', '/opt/odoo/.local/share/Odoo/addons/10.0', u'/opt/odoo/odoo_10/src/OCA/OCB/addons', u'/opt/odoo/odoo_10/src/OCA', u'/opt/odoo/odoo_10/src/anb', u'/opt/odoo/odoo_10/src/ener', u'/opt/odoo/odoo_10/src/external', u'/opt/odoo/odoo_10/src/linked', u'/opt/odoo/odoo_10/src/others', u'/opt/odoo/odoo_10/src/muk']
+2022-10-26 08:35:57,984 20956 INFO ? odoo: database: odoo@default:default
+2022-10-26 08:35:58,003 20956 INFO ? odoo.service.server: HTTP service (werkzeug) running on hp.cadilinea.lan:30200
+2022-10-26 08:35:58,017 20956 INFO prueba_30200 odoo.modules.loading: loading 1 modules...
+2022-10-26 08:35:58,118 20956 INFO prueba_30200 odoo.modules.loading: 1 modules loaded in 0.10s, 0 queries
+2022-10-26 08:35:58,216 20956 INFO prueba_30200 odoo.modules.loading: loading 123 modules...
+2022-10-26 08:35:58,361 20956 INFO prueba_30200 odoo.addons.report.models.report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2022-10-26 08:35:58,382 20956 WARNING prueba_30200 py.warnings: /opt/odoo/odoo_10/odoo_10_30200-virtualenv-wrapper/lib/python2.7/site-packages/paramiko/transport.py:33: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.backends import default_backend
+
+2022-10-26 08:35:58,853 20956 INFO prueba_30200 odoo.modules.loading: 123 modules loaded in 0.64s, 0 queries
+2022-10-26 08:35:58,995 20956 WARNING prueba_30200 odoo.fields: Field customer.invoice.lines.customer_wizard_id with unknown comodel_name 'account.multi.payments'
+2022-10-26 08:35:59,015 20956 WARNING prueba_30200 odoo.fields: Field res.country.parish.state_id with unknown comodel_name None
+2022-10-26 08:35:59,076 20956 WARNING prueba_30200 odoo.fields: Field supplier.invoice.lines.supplier_wizard_id with unknown comodel_name 'account.multi.payments'
+2022-10-26 08:35:59,291 20956 WARNING prueba_30200 odoo.fields: Field account.asset.asset.trace.urban_nucleus_id with unknown comodel_name 'res.country.core'
+2022-10-26 08:35:59,305 20956 WARNING prueba_30200 odoo.fields: Field res.country.nucleus.state_id with unknown comodel_name None
+2022-10-26 08:35:59,533 20956 INFO prueba_30200 odoo.modules.loading: Modules loaded.
+2022-10-26 08:36:26,065 20956 WARNING ? odoo.addons.l10n_ch_bank_statement_import_postfinance.models.postfinance_file_parser: Please install Wand (sudo pip wand) for Postfinance bank statement import supporting tiff attachments.
+2022-10-26 08:36:37,048 20956 INFO ? odoo.http: HTTP Configuring static files
+2022-10-26 08:36:37,102 20956 INFO prueba_30200 odoo.addons.base.ir.ir_http: Generating routing map
+2022-10-26 08:36:37,283 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:37] "GET / HTTP/1.1" 303 -
+2022-10-26 08:36:38,841 20956 INFO prueba_30200 odoo.addons.base.ir.ir_attachment: _read_file reading /opt/odoo/.local/share/Odoo/filestore/prueba_30200/54/549f82ae56b7397db7fcd8ca1a179494b0cfda03
+Traceback (most recent call last):
+  File "/opt/odoo/odoo_10/src/OCA/OCB/odoo/addons/base/ir/ir_attachment.py", line 100, in _file_read
+    r = open(full_path,'rb').read().encode('base64')
+IOError: [Errno 2] No existe el fichero o el directorio: u'/opt/odoo/.local/share/Odoo/filestore/prueba_30200/54/549f82ae56b7397db7fcd8ca1a179494b0cfda03'
+2022-10-26 08:36:38,841 20956 INFO prueba_30200 odoo.addons.base.ir.ir_attachment: _read_file reading /opt/odoo/.local/share/Odoo/filestore/prueba_30200/f3/f3f11e52a3ead336749157f46e1c8d8a07de8b61
+Traceback (most recent call last):
+  File "/opt/odoo/odoo_10/src/OCA/OCB/odoo/addons/base/ir/ir_attachment.py", line 100, in _file_read
+    r = open(full_path,'rb').read().encode('base64')
+IOError: [Errno 2] No existe el fichero o el directorio: u'/opt/odoo/.local/share/Odoo/filestore/prueba_30200/f3/f3f11e52a3ead336749157f46e1c8d8a07de8b61'
+2022-10-26 08:36:38,841 20956 INFO prueba_30200 odoo.addons.base.ir.ir_attachment: _read_file reading /opt/odoo/.local/share/Odoo/filestore/prueba_30200/a7/a73d3d22e9c79a282a48dcb5bea3ae31033d7c37
+Traceback (most recent call last):
+  File "/opt/odoo/odoo_10/src/OCA/OCB/odoo/addons/base/ir/ir_attachment.py", line 100, in _file_read
+    r = open(full_path,'rb').read().encode('base64')
+IOError: [Errno 2] No existe el fichero o el directorio: u'/opt/odoo/.local/share/Odoo/filestore/prueba_30200/a7/a73d3d22e9c79a282a48dcb5bea3ae31033d7c37'
+2022-10-26 08:36:38,842 20956 INFO prueba_30200 odoo.addons.base.ir.ir_attachment: _read_file reading /opt/odoo/.local/share/Odoo/filestore/prueba_30200/c8/c8c10dbb88a65b2768cc87c9ded378fae6a0f375
+Traceback (most recent call last):
+  File "/opt/odoo/odoo_10/src/OCA/OCB/odoo/addons/base/ir/ir_attachment.py", line 100, in _file_read
+    r = open(full_path,'rb').read().encode('base64')
+IOError: [Errno 2] No existe el fichero o el directorio: u'/opt/odoo/.local/share/Odoo/filestore/prueba_30200/c8/c8c10dbb88a65b2768cc87c9ded378fae6a0f375'
+2022-10-26 08:36:38,842 20956 INFO prueba_30200 odoo.addons.base.ir.ir_attachment: _read_file reading /opt/odoo/.local/share/Odoo/filestore/prueba_30200/fd/fd16bb9261211d4bd81b4a530213f0f7a4c13ac6
+Traceback (most recent call last):
+  File "/opt/odoo/odoo_10/src/OCA/OCB/odoo/addons/base/ir/ir_attachment.py", line 100, in _file_read
+    r = open(full_path,'rb').read().encode('base64')
+IOError: [Errno 2] No existe el fichero o el directorio: u'/opt/odoo/.local/share/Odoo/filestore/prueba_30200/fd/fd16bb9261211d4bd81b4a530213f0f7a4c13ac6'
+2022-10-26 08:36:38,842 20956 INFO prueba_30200 odoo.addons.base.ir.ir_attachment: _read_file reading /opt/odoo/.local/share/Odoo/filestore/prueba_30200/e7/e74dd9dc2afc6d8b8e96d0215bb32ee9befacae7
+Traceback (most recent call last):
+  File "/opt/odoo/odoo_10/src/OCA/OCB/odoo/addons/base/ir/ir_attachment.py", line 100, in _file_read
+    r = open(full_path,'rb').read().encode('base64')
+IOError: [Errno 2] No existe el fichero o el directorio: u'/opt/odoo/.local/share/Odoo/filestore/prueba_30200/e7/e74dd9dc2afc6d8b8e96d0215bb32ee9befacae7'
+2022-10-26 08:36:38,843 20956 INFO prueba_30200 odoo.addons.base.ir.ir_attachment: _read_file reading /opt/odoo/.local/share/Odoo/filestore/prueba_30200/af/af282536d36de83182b4a704be22a13f2e685e85
+Traceback (most recent call last):
+  File "/opt/odoo/odoo_10/src/OCA/OCB/odoo/addons/base/ir/ir_attachment.py", line 100, in _file_read
+    r = open(full_path,'rb').read().encode('base64')
+IOError: [Errno 2] No existe el fichero o el directorio: u'/opt/odoo/.local/share/Odoo/filestore/prueba_30200/af/af282536d36de83182b4a704be22a13f2e685e85'
+2022-10-26 08:36:38,843 20956 INFO prueba_30200 odoo.addons.base.ir.ir_attachment: _read_file reading /opt/odoo/.local/share/Odoo/filestore/prueba_30200/43/43c6740905a73c92f02235faacdd207d9d924e62
+Traceback (most recent call last):
+  File "/opt/odoo/odoo_10/src/OCA/OCB/odoo/addons/base/ir/ir_attachment.py", line 100, in _file_read
+    r = open(full_path,'rb').read().encode('base64')
+IOError: [Errno 2] No existe el fichero o el directorio: u'/opt/odoo/.local/share/Odoo/filestore/prueba_30200/43/43c6740905a73c92f02235faacdd207d9d924e62'
+2022-10-26 08:36:38,843 20956 INFO prueba_30200 odoo.addons.base.ir.ir_attachment: _read_file reading /opt/odoo/.local/share/Odoo/filestore/prueba_30200/55/55ed9b2ccfd8abf6c4c6c2f6c2439fbb6dfffb21
+Traceback (most recent call last):
+  File "/opt/odoo/odoo_10/src/OCA/OCB/odoo/addons/base/ir/ir_attachment.py", line 100, in _file_read
+    r = open(full_path,'rb').read().encode('base64')
+IOError: [Errno 2] No existe el fichero o el directorio: u'/opt/odoo/.local/share/Odoo/filestore/prueba_30200/55/55ed9b2ccfd8abf6c4c6c2f6c2439fbb6dfffb21'
+2022-10-26 08:36:38,844 20956 INFO prueba_30200 odoo.addons.base.ir.ir_attachment: _read_file reading /opt/odoo/.local/share/Odoo/filestore/prueba_30200/bd/bdcc3e2f6138485be531cc74ba70eb6079b3c693
+Traceback (most recent call last):
+  File "/opt/odoo/odoo_10/src/OCA/OCB/odoo/addons/base/ir/ir_attachment.py", line 100, in _file_read
+    r = open(full_path,'rb').read().encode('base64')
+IOError: [Errno 2] No existe el fichero o el directorio: u'/opt/odoo/.local/share/Odoo/filestore/prueba_30200/bd/bdcc3e2f6138485be531cc74ba70eb6079b3c693'
+2022-10-26 08:36:38,844 20956 INFO prueba_30200 odoo.addons.base.ir.ir_attachment: _read_file reading /opt/odoo/.local/share/Odoo/filestore/prueba_30200/21/21cdf7b6948b5e79d8ffb9977dea2dae5d1ae8fa
+Traceback (most recent call last):
+  File "/opt/odoo/odoo_10/src/OCA/OCB/odoo/addons/base/ir/ir_attachment.py", line 100, in _file_read
+    r = open(full_path,'rb').read().encode('base64')
+IOError: [Errno 2] No existe el fichero o el directorio: u'/opt/odoo/.local/share/Odoo/filestore/prueba_30200/21/21cdf7b6948b5e79d8ffb9977dea2dae5d1ae8fa'
+2022-10-26 08:36:38,844 20956 INFO prueba_30200 odoo.addons.base.ir.ir_attachment: _read_file reading /opt/odoo/.local/share/Odoo/filestore/prueba_30200/cf/cf96d1aae2c821025a85d0affa1400838305fecc
+Traceback (most recent call last):
+  File "/opt/odoo/odoo_10/src/OCA/OCB/odoo/addons/base/ir/ir_attachment.py", line 100, in _file_read
+    r = open(full_path,'rb').read().encode('base64')
+IOError: [Errno 2] No existe el fichero o el directorio: u'/opt/odoo/.local/share/Odoo/filestore/prueba_30200/cf/cf96d1aae2c821025a85d0affa1400838305fecc'
+2022-10-26 08:36:38,844 20956 INFO prueba_30200 odoo.addons.base.ir.ir_attachment: _read_file reading /opt/odoo/.local/share/Odoo/filestore/prueba_30200/08/08ebc81e57db863437270b64ef2043154d5bb1b2
+Traceback (most recent call last):
+  File "/opt/odoo/odoo_10/src/OCA/OCB/odoo/addons/base/ir/ir_attachment.py", line 100, in _file_read
+    r = open(full_path,'rb').read().encode('base64')
+IOError: [Errno 2] No existe el fichero o el directorio: u'/opt/odoo/.local/share/Odoo/filestore/prueba_30200/08/08ebc81e57db863437270b64ef2043154d5bb1b2'
+2022-10-26 08:36:38,844 20956 INFO prueba_30200 odoo.addons.base.ir.ir_attachment: _read_file reading /opt/odoo/.local/share/Odoo/filestore/prueba_30200/29/293431f94d2b6e6d13325e9444ddc06a8ac254a0
+Traceback (most recent call last):
+  File "/opt/odoo/odoo_10/src/OCA/OCB/odoo/addons/base/ir/ir_attachment.py", line 100, in _file_read
+    r = open(full_path,'rb').read().encode('base64')
+IOError: [Errno 2] No existe el fichero o el directorio: u'/opt/odoo/.local/share/Odoo/filestore/prueba_30200/29/293431f94d2b6e6d13325e9444ddc06a8ac254a0'
+2022-10-26 08:36:38,845 20956 INFO prueba_30200 odoo.addons.base.ir.ir_attachment: _read_file reading /opt/odoo/.local/share/Odoo/filestore/prueba_30200/f2/f203f13343ea7fc6ba0f7f69da30b6ba1f146e13
+Traceback (most recent call last):
+  File "/opt/odoo/odoo_10/src/OCA/OCB/odoo/addons/base/ir/ir_attachment.py", line 100, in _file_read
+    r = open(full_path,'rb').read().encode('base64')
+IOError: [Errno 2] No existe el fichero o el directorio: u'/opt/odoo/.local/share/Odoo/filestore/prueba_30200/f2/f203f13343ea7fc6ba0f7f69da30b6ba1f146e13'
+2022-10-26 08:36:38,845 20956 INFO prueba_30200 odoo.addons.base.ir.ir_attachment: _read_file reading /opt/odoo/.local/share/Odoo/filestore/prueba_30200/5c/5ce0fc221a6c38187865896d95541b3716bbb370
+Traceback (most recent call last):
+  File "/opt/odoo/odoo_10/src/OCA/OCB/odoo/addons/base/ir/ir_attachment.py", line 100, in _file_read
+    r = open(full_path,'rb').read().encode('base64')
+IOError: [Errno 2] No existe el fichero o el directorio: u'/opt/odoo/.local/share/Odoo/filestore/prueba_30200/5c/5ce0fc221a6c38187865896d95541b3716bbb370'
+2022-10-26 08:36:38,845 20956 INFO prueba_30200 odoo.addons.base.ir.ir_attachment: _read_file reading /opt/odoo/.local/share/Odoo/filestore/prueba_30200/45/45bff6378331e9a088a96ccbe79a7b36d72876cb
+Traceback (most recent call last):
+  File "/opt/odoo/odoo_10/src/OCA/OCB/odoo/addons/base/ir/ir_attachment.py", line 100, in _file_read
+    r = open(full_path,'rb').read().encode('base64')
+IOError: [Errno 2] No existe el fichero o el directorio: u'/opt/odoo/.local/share/Odoo/filestore/prueba_30200/45/45bff6378331e9a088a96ccbe79a7b36d72876cb'
+2022-10-26 08:36:38,845 20956 INFO prueba_30200 odoo.addons.base.ir.ir_attachment: _read_file reading /opt/odoo/.local/share/Odoo/filestore/prueba_30200/1a/1ad3cfd7e3e5b9348336929d833336bb82bc748d
+Traceback (most recent call last):
+  File "/opt/odoo/odoo_10/src/OCA/OCB/odoo/addons/base/ir/ir_attachment.py", line 100, in _file_read
+    r = open(full_path,'rb').read().encode('base64')
+IOError: [Errno 2] No existe el fichero o el directorio: u'/opt/odoo/.local/share/Odoo/filestore/prueba_30200/1a/1ad3cfd7e3e5b9348336929d833336bb82bc748d'
+2022-10-26 08:36:40,611 20956 WARNING prueba_30200 odoo.modules.module: module base_gtin: module not found
+2022-10-26 08:36:40,648 20956 WARNING prueba_30200 odoo.modules.module: module base_gtin: module not found
+2022-10-26 08:36:40,713 20956 WARNING prueba_30200 odoo.modules.module: module base_gtin: module not found
+2022-10-26 08:36:40,853 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:40] "GET /web HTTP/1.1" 200 -
+2022-10-26 08:36:41,224 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:41] "GET /web/content/1577-ad012f3/web_editor.assets_editor.0.css HTTP/1.1" 200 -
+2022-10-26 08:36:41,259 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:41] "GET /web/content/1576-9fa958a/web_editor.summernote.0.css HTTP/1.1" 200 -
+2022-10-26 08:36:41,267 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:41] "GET /web/content/1570-2e81056/web.assets_common.0.css HTTP/1.1" 200 -
+2022-10-26 08:36:41,282 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:41] "GET /web/content/1575-74415a7/web.assets_backend.1.css HTTP/1.1" 200 -
+2022-10-26 08:36:41,290 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:41] "GET /web/content/1580-ad012f3/web_editor.assets_editor.js HTTP/1.1" 200 -
+2022-10-26 08:36:41,338 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:41] "GET /web/content/1579-9fa958a/web_editor.summernote.js HTTP/1.1" 200 -
+2022-10-26 08:36:41,383 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:41] "GET /web/binary/company_logo HTTP/1.1" 200 -
+2022-10-26 08:36:41,664 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:41] "POST /web/dataset/call HTTP/1.1" 200 -
+2022-10-26 08:36:41,673 20956 INFO ? werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:41] "GET /web_editor/static/src/xml/ace.xml HTTP/1.1" 200 -
+2022-10-26 08:36:41,708 20956 INFO ? werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:41] "GET /web_editor/static/src/xml/editor.xml HTTP/1.1" 200 -
+2022-10-26 08:36:41,784 20956 INFO ? werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:41] "GET /web_editor/static/src/xml/snippets.xml HTTP/1.1" 200 -
+2022-10-26 08:36:42,136 20956 INFO ? werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:42] "GET /web/static/src/img/favicon.ico HTTP/1.1" 200 -
+2022-10-26 08:36:42,468 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:42] "GET /web/webclient/qweb?mods=web,web_kanban,base,bus,muk_web_client,muk_web_client_refresh,muk_fields_lobject,muk_attachment_lobject,web_sheet_full_width,board,web_tour,mail,report,product,web_planner,account,l10n_es,date_range,account_tax_balance,l10n_es_aeat,l10n_es_aeat_mod111,sales_team,sale,sale_stock,account_accountant,hr_expense,auto_backup,base_import,base_location,purchase,ener_last_purchase_price,barcodes,stock,anb_custom_reports,ener_custom_reports,web_calendar,calendar,crm,web_kanban_gauge,sale_crm,muk_autovacuum,module_auto_update,database_cleanup,point_of_sale,muk_web_preview,muk_dms,account_reversal,account_fiscal_year_closing,l10n_es_account_fiscal_year_closing,web_editor,web_settings_dashboard,report_xlsx,l10n_es_vat_book,payment,payment_transfer,bi_cs_multiple_payment,ener_purchase_discount,l10n_es_aeat_mod303,web_widget_many2many_tags_multi_selection,web_export_view,ener_multi_analytic_in_invoice,hr,hr_holidays,hr_holiday_exclude_special_days,account_bank_statement_import,l10n_es_account_bank_statement_import_n43,google_calendar,inventory_barcode_scanning,pos_mercury,account_balance_reporting,account_group,project,hr_timesheet,web_tree_dynamic_colored_field,ener_project_ext,muk_dms_access,muk_dms_file,maintenance,account_asset,ener_asset_trace,ener_force_invoice_paid_state,account_financial_report_qweb,ener_account_ext,l10n_es_account_balance_report,web_diagram,barcodes_ean14,fleet,ener_purchase_views_ext,base_location_geonames_import,ener_fleet_ext,web_decimal_numpad_dot,project_gtd,l10n_es_toponyms,note,l10n_es_partner,portal,l10n_es_aeat_mod347,account_financial_report_date_range,partner_vat_unique HTTP/1.1" 304 -
+2022-10-26 08:36:42,729 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:42] "POST /web/webclient/translations HTTP/1.1" 200 -
+2022-10-26 08:36:42,768 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:42] "GET /web/webclient/locale/es_ES HTTP/1.1" 200 -
+2022-10-26 08:36:42,812 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:42] "GET /web/binary/company_logo?db=prueba_30200&company=1 HTTP/1.1" 200 -
+2022-10-26 08:36:42,975 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:42] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 -
+2022-10-26 08:36:43,257 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:43] "POST /calendar/notify HTTP/1.1" 200 -
+2022-10-26 08:36:43,358 20956 INFO prueba_30200 odoo.addons.base.ir.ir_attachment: _read_file reading /opt/odoo/.local/share/Odoo/filestore/prueba_30200/4c/4c48e767e88741ebb6bb8af294669ad25eba5641
+Traceback (most recent call last):
+  File "/opt/odoo/odoo_10/src/OCA/OCB/odoo/addons/base/ir/ir_attachment.py", line 100, in _file_read
+    r = open(full_path,'rb').read().encode('base64')
+IOError: [Errno 2] No existe el fichero o el directorio: u'/opt/odoo/.local/share/Odoo/filestore/prueba_30200/4c/4c48e767e88741ebb6bb8af294669ad25eba5641'
+2022-10-26 08:36:43,409 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:43] "GET /web/image?model=res.users&field=image_small&id=7 HTTP/1.1" 200 -
+2022-10-26 08:36:43,418 20956 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres
+2022-10-26 08:36:43,589 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:43] "POST /web/action/load HTTP/1.1" 200 -
+2022-10-26 08:36:44,128 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:44] "POST /mail/client_action HTTP/1.1" 200 -
+2022-10-26 08:36:44,447 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:44] "POST /web/dataset/call_kw/mail.message/fields_view_get HTTP/1.1" 200 -
+2022-10-26 08:36:44,800 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:44] "POST /web/dataset/call_kw/ir.filters/get_filters HTTP/1.1" 200 -
+2022-10-26 08:36:44,991 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:44] "POST /web/dataset/call_kw/mail.message/message_fetch HTTP/1.1" 200 -
+2022-10-26 08:36:45,173 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:45] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2022-10-26 08:36:45,919 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:45] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2022-10-26 08:36:51,976 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:51] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2022-10-26 08:36:52,382 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:52] "POST /web/action/load HTTP/1.1" 200 -
+2022-10-26 08:36:52,681 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:52] "POST /web/dataset/call_kw/stock.picking.type/load_views HTTP/1.1" 200 -
+2022-10-26 08:36:52,783 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:52] "POST /web/dataset/call_kw/stock.picking.type/fields_get HTTP/1.1" 200 -
+2022-10-26 08:36:53,128 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:53] "POST /web/dataset/call_kw/web.planner/render HTTP/1.1" 200 -
+2022-10-26 08:36:53,153 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:53] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2022-10-26 08:36:53,197 20956 INFO ? werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:53] "GET /web_planner/static/src/img/odoo_logo.png HTTP/1.1" 200 -
+2022-10-26 08:36:53,197 20956 INFO ? werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:53] "GET /web_planner/static/src/img/fabien_signature.png HTTP/1.1" 200 -
+2022-10-26 08:36:57,615 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:57] "POST /web/dataset/call_button HTTP/1.1" 200 -
+2022-10-26 08:36:57,978 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:57] "POST /web/dataset/call_kw/stock.picking/load_views HTTP/1.1" 200 -
+2022-10-26 08:36:58,036 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:58] "POST /web/dataset/call_kw/stock.picking.type/name_get HTTP/1.1" 200 -
+2022-10-26 08:36:58,149 20956 INFO prueba_30200 odoo.addons.base.ir.ir_cron: Starting job `Generation of contracts costs based on the costs frequency`.
+2022-10-26 08:36:58,247 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:58] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2022-10-26 08:36:58,286 20956 INFO prueba_30200 odoo.addons.base.ir.ir_cron: Starting job `Generate preventive maintenance requests`.
+2022-10-26 08:36:58,346 20956 INFO prueba_30200 odoo.addons.base.ir.ir_cron: Starting job `Backup Scheduler`.
+2022-10-26 08:36:58,395 20956 INFO prueba_30200 werkzeug: 192.168.8.100 - - [26/Oct/2022 08:36:58] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2022-10-26 08:36:58,410 20956 INFO prueba_30200 odoo.addons.base.ir.ir_cron: Starting job `Check Action Rules`.
+2022-10-26 08:36:58,511 20956 INFO prueba_30200 odoo.addons.base.ir.ir_cron: Starting job `Auto-vacuum internal data`.
+2022-10-26 08:36:58,567 20956 INFO prueba_30200 odoo.addons.base.ir.ir_attachment: filestore gc 11 checked, 0 removed
+2022-10-26 08:36:58,789 20956 INFO prueba_30200 odoo.sql_db: bad query: SELECT id FROM account_invoice_confirm_wizard WHERE COALESCE(write_date, create_date, (now() at time zone 'UTC'))::timestamp < ((now() at time zone 'UTC') - interval '3600.0 seconds')
+2022-10-26 08:36:58,789 20956 WARNING prueba_30200 odoo.addons.base.ir.ir_autovacuum: Failed to clean transient model account.invoice.confirm.wizard()
+no existe la relación «account_invoice_confirm_wizard»
+LINE 1: SELECT id FROM account_invoice_confirm_wizard WHERE COALESCE...
+                       ^
+
+2022-10-26 08:36:59,069 20956 INFO prueba_30200 odoo.addons.base.ir.ir_cron: Starting job `Calendar synchronization`.
+2022-10-26 08:36:59,080 20956 INFO prueba_30200 odoo.addons.google_calendar.models.google_calendar: Calendar Synchro - Started by cron
+2022-10-26 08:36:59,080 20956 INFO prueba_30200 odoo.addons.google_calendar.models.google_calendar: Calendar Synchro - Ended by cron
+2022-10-26 08:36:59,094 20956 INFO prueba_30200 odoo.addons.base.ir.ir_cron: Starting job `Task state synchronization`.
+2022-10-26 08:36:59,127 20956 INFO prueba_30200 odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2022-10-26 08:36:59,202 20956 INFO prueba_30200 odoo.addons.base.ir.ir_cron: Starting job `Run Event Reminder`.
+2022-10-26 08:36:59,255 20956 INFO prueba_30200 odoo.modules.registry: At least one model cache has been invalidated, signaling through the database.
+2022-10-26 08:36:59,405 20956 INFO prueba_30200 odoo.addons.base.ir.ir_autovacuum: GC'd 1 user log entries
+2022-10-26 08:36:59,467 20956 INFO prueba_30200 odoo.addons.muk_autovacuum.models.ir_autovacuum: GC'd 0 attachments from mail.message entries
+2022-10-26 08:36:59,470 20956 INFO prueba_30200 odoo.addons.muk_autovacuum.models.ir_autovacuum: GC'd 0 mail.message records
+2022-10-26 08:36:59,494 20956 INFO prueba_30200 odoo.addons.muk_autovacuum.models.ir_autovacuum: GC'd 0 ir.logging records
+2022-10-26 08:37:03,934 20956 INFO prueba_30200 odoo.service.server: Initiating shutdown
+2022-10-26 08:37:03,934 20956 INFO prueba_30200 odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown.
